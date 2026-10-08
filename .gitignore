@@ -42,3 +42,4 @@ video-demo/build/
 # Sistema
 .DS_Store
 Thumbs.db
+.agents/skills/
