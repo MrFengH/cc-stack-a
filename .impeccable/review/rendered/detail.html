@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Petit Atelier Colonia Cítrica Menta Eau de Cologne · 100 ml · Nota Alta</title>
+  <meta name="description" content="Limón y menta para refrescar en días de calor y de escuela. $22.00 con envío en Panamá.">
+  <meta name="theme-color" content="#23463c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/regular/style.css">
+  <link rel="stylesheet" href="app.css">
+  
+</head>
+<body class="min-h-dvh flex flex-col">
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+  <div class="bg-pine text-surface">
+  <p class="container-page flex h-9 items-center justify-center text-center text-[13px] font-medium">
+    Envío gratis en Ciudad de Panamá desde $60.<span class="hidden sm:inline">&nbsp;Paga con tarjeta, Yappy o ACH.</span>
+  </p>
+</div>
+
+<header class="sticky top-0 z-40 border-b border-line bg-ground" data-header>
+  <div class="container-page">
+    <div class="flex h-16 items-center gap-2 sm:gap-4">
+      <button type="button" class="btn-icon -ml-2 lg:hidden" data-dialog-open="menu-movil" aria-label="Abrir menú" aria-haspopup="dialog">
+        <i class="ph ph-list text-2xl" aria-hidden="true"></i>
+      </button>
+
+      <a href="/" class="mr-2 shrink-0 text-[22px] leading-none font-semibold tracking-[-0.035em] lg:mr-6" aria-label="Nota Alta, ir al inicio">
+        Nota&nbsp;Alta
+      </a>
+
+      <form action="/tienda/" method="get" role="search" class="relative hidden max-w-xl flex-1 md:block">
+        <label for="buscar-escritorio" class="sr-only">Buscar perfumes</label>
+        <i class="ph ph-magnifying-glass pointer-events-none absolute top-1/2 left-3 -translate-y-1/2 text-lg text-ink-soft" aria-hidden="true"></i>
+        <input id="buscar-escritorio" type="search" name="q" value="" placeholder="Busca por perfume, marca o nota (ej. vainilla)" class="input pl-10" autocomplete="off">
+      </form>
+
+      <nav aria-label="Cuenta y carrito" class="ml-auto flex items-center gap-1">
+        
+        <a href="/cuenta/" class="btn-icon" aria-label="Iniciar sesión">
+          <i class="ph ph-user text-[22px]" aria-hidden="true"></i>
+        </a>
+        <a href="/carrito/" class="btn-icon -mr-2" data-cart-link aria-label="Carrito, 0 artículos">
+          <i class="ph ph-handbag text-[22px]" aria-hidden="true"></i>
+          <span data-cart-count class="absolute top-1 right-0.5 grid h-[18px] min-w-[18px] place-items-center rounded-full bg-sale px-1 text-[11px] font-semibold text-white hidden" aria-hidden="true">0</span>
+        </a>
+      </nav>
+    </div>
+
+    <form action="/tienda/" method="get" role="search" class="relative pb-3 md:hidden">
+      <label for="buscar-movil" class="sr-only">Buscar perfumes</label>
+      <i class="ph ph-magnifying-glass pointer-events-none absolute top-[22px] left-3 -translate-y-1/2 text-lg text-ink-soft" aria-hidden="true"></i>
+      <input id="buscar-movil" type="search" name="q" value="" placeholder="Busca perfume, marca o nota" class="input pl-10" autocomplete="off">
+    </form>
+
+    <nav aria-label="Principal" class="hidden lg:block">
+      <ul class="-mb-px flex gap-8 text-[15px]">
+        
+          <li>
+            <a href="/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Inicio</a>
+          </li>
+        
+          <li>
+            <a href="/categoria/caballeros/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Caballeros</a>
+          </li>
+        
+          <li>
+            <a href="/categoria/damas/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Damas</a>
+          </li>
+        
+          <li>
+            <a href="/categoria/ninos/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Niños</a>
+          </li>
+        
+          <li>
+            <a href="/marcas/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Marcas</a>
+          </li>
+        
+          <li>
+            <a href="/nosotros/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Nosotros</a>
+          </li>
+        
+          <li>
+            <a href="/contacto/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Contacto</a>
+          </li>
+        
+        <li class="ml-auto">
+          <a href="/tienda/?oferta=1" class="inline-flex h-11 items-center gap-1.5 border-b-2 border-transparent font-medium text-sale hover:border-sale/40">
+            <i class="ph ph-tag" aria-hidden="true"></i>Ofertas
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<dialog id="menu-movil" class="sheet sheet-left" aria-label="Menú">
+  <div class="flex h-16 items-center justify-between border-b border-line px-4">
+    <span class="text-xl font-semibold tracking-[-0.035em]">Nota Alta</span>
+    <button type="button" class="btn-icon -mr-2" data-dialog-close aria-label="Cerrar menú"><i class="ph ph-x text-2xl" aria-hidden="true"></i></button>
+  </div>
+  <nav aria-label="Principal (móvil)" class="px-4 py-2">
+    <ul class="divide-y divide-line">
+      
+        <li>
+          <a href="/" class="flex h-14 items-center justify-between text-lg " >
+            Inicio<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/categoria/caballeros/" class="flex h-14 items-center justify-between text-lg " >
+            Caballeros<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/categoria/damas/" class="flex h-14 items-center justify-between text-lg " >
+            Damas<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/categoria/ninos/" class="flex h-14 items-center justify-between text-lg " >
+            Niños<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/marcas/" class="flex h-14 items-center justify-between text-lg " >
+            Marcas<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/nosotros/" class="flex h-14 items-center justify-between text-lg " >
+            Nosotros<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/contacto/" class="flex h-14 items-center justify-between text-lg " >
+            Contacto<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+      <li>
+        <a href="/tienda/?oferta=1" class="flex h-14 items-center justify-between text-lg font-medium text-sale">Ofertas<i class="ph ph-caret-right" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <div class="mt-auto border-t border-line p-4 text-sm text-ink-soft">
+    
+      <a href="/cuenta/ingresar/" class="link">Iniciar sesión</a> <span aria-hidden="true">/</span> <a href="/cuenta/registro/" class="link">Crear cuenta</a>
+    
+  </div>
+</dialog>
+
+
+  <main id="contenido" class="flex-1" tabindex="-1">
+    
+<div class="container-page pt-6">
+  <nav aria-label="Ruta de navegación" class="text-sm text-ink-soft">
+    <ol class="flex flex-wrap items-center gap-1.5">
+      <li><a href="/" class="hover:text-ink hover:underline">Inicio</a></li>
+      <li aria-hidden="true">/</li><li><a href="/categoria/ninos/" class="hover:text-ink hover:underline">Niños</a></li>
+      <li aria-hidden="true">/</li><li><a href="/marca/petit-atelier/" class="hover:text-ink hover:underline">Petit Atelier</a></li>
+      <li aria-hidden="true">/</li><li aria-current="page" class="text-ink">Colonia Cítrica Menta</li>
+    </ol>
+  </nav>
+
+  <div class="mt-6 grid gap-8 lg:grid-cols-12 lg:gap-12">
+    
+    <div class="lg:col-span-7" data-gallery>
+      <div class="photo-mat aspect-[4/5] lg:max-h-[calc(100dvh-180px)] lg:w-full">
+        <img src="/static/img/products/kids-citrica.webp" alt="Frasco de Petit Atelier Colonia Cítrica Menta" width="800" height="1000" fetchpriority="high" data-gallery-main>
+        <span class="badge badge-sale absolute top-4 left-4">-15%</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="lg:col-span-5">
+      <div class="lg:sticky lg:top-[136px]">
+        <h1 class="text-4xl leading-[1.05] font-semibold sm:text-[2.75rem]">Colonia Cítrica Menta</h1>
+        <p class="mt-2 text-ink-soft"><a href="/marca/petit-atelier/" class="font-medium text-ink underline decoration-ink/30 underline-offset-4 hover:decoration-ink">Petit Atelier</a> · Eau de Cologne 100 ml</p>
+
+        <div class="mt-6 border-t border-line pt-6">
+          <p class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <span class="price text-3xl text-sale"><span class="sr-only">Precio: </span>$22.00</span>
+            
+              <span class="price-old text-lg"><span class="sr-only">Antes: </span>$26.00</span>
+              <span class="text-sm font-semibold text-sale">Ahorras $4.00 (15%)</span>
+            
+          </p>
+          <p class="mt-1 text-sm text-ink-soft">ITBMS incluido</p>
+
+          
+            <p class="mt-4 flex flex-wrap items-center gap-2 text-sm">
+              <span class="badge badge-coupon"><i class="ph ph-ticket" aria-hidden="true"></i>PETIT15</span>
+              <span class="text-ink-soft">15% extra en Petit Atelier. Escríbelo en el carrito.</span>
+            </p>
+          
+
+          <p class="mt-5 flex items-center gap-2 font-medium text-success">
+            
+              <i class="ph ph-check-circle text-xl" aria-hidden="true"></i>Disponible: 12 unidades en inventario
+            
+          </p>
+
+          
+          <form method="post" action="/carrito/agregar/138/" class="mt-5 flex gap-3" data-add-to-cart>
+            <input type="hidden" name="csrfmiddlewaretoken" value="z4SnRJenmPb7sYiMlgjMDSBdywN7bFf4X9mByeOgg1e9p1iCvElvswnBqr7FwRqP">
+            <input type="hidden" name="next" value="/perfume/petit-atelier-colonia-citrica-menta-100ml/">
+            <div class="flex h-12 items-center rounded-sm border border-line-strong bg-white" data-qty>
+              <button type="button" class="grid size-11 place-items-center text-lg hover:bg-sage" data-qty-step="-1" aria-label="Quitar una unidad"><i class="ph ph-minus" aria-hidden="true"></i></button>
+              <label for="cantidad" class="sr-only">Cantidad</label>
+              <input id="cantidad" type="number" name="quantity" value="1" min="1" max="12" inputmode="numeric" class="h-full w-12 border-0 bg-transparent text-center text-base focus:outline-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none">
+              <button type="button" class="grid size-11 place-items-center text-lg hover:bg-sage" data-qty-step="1" aria-label="Agregar una unidad"><i class="ph ph-plus" aria-hidden="true"></i></button>
+            </div>
+            <button type="submit" class="btn btn-primary h-12 flex-1"><i class="ph ph-handbag text-lg" aria-hidden="true"></i>Agregar al carrito</button>
+          </form>
+          
+
+          <p class="mt-6 leading-relaxed">Limón y menta para refrescar en días de calor y de escuela.</p>
+
+          <ul class="mt-6 divide-y divide-line rounded-sm border border-line bg-surface text-sm" aria-label="Envío y pago">
+            <li class="flex gap-3 p-4">
+              <i class="ph ph-truck mt-0.5 text-xl text-pine" aria-hidden="true"></i>
+              <p><span class="font-semibold">Ciudad de Panamá: 24 a 48 horas</span>, $4.50 o gratis desde $60. Interior del país: 3 a 5 días hábiles, $9.00.</p>
+            </li>
+            <li class="flex gap-3 p-4">
+              <i class="ph ph-storefront mt-0.5 text-xl text-pine" aria-hidden="true"></i>
+              <p><span class="font-semibold">Retiro en tienda gratis</span>, listo en 4 horas.</p>
+            </li>
+            <li class="flex gap-3 p-4">
+              <i class="ph ph-credit-card mt-0.5 text-xl text-pine" aria-hidden="true"></i>
+              <p><span class="font-semibold">Paga con tarjeta, Yappy o ACH</span>, o en efectivo al recibir en Ciudad de Panamá.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <section class="mt-20 grid gap-10 border-t border-line pt-12 lg:grid-cols-12" aria-labelledby="desc-title">
+    <div class="lg:col-span-5">
+      <h2 id="desc-title" class="text-2xl font-semibold">Sobre este perfume</h2>
+      <p class="mt-4 max-w-[62ch] leading-relaxed text-ink-soft">Colonia Cítrica Menta de Petit Atelier es un eau de cologne de la familia cítrica. Limón y menta para refrescar en días de calor y de escuela. Lo recomendamos para después del baño; aplícalo sobre la ropa. Al aplicarlo, empieza con limón, menta; tras unos minutos aparece un corazón de hoja de naranjo, y en la piel permanece un fondo de cedro suave.</p>
+      <dl class="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 text-sm">
+        <dt class="text-ink-soft">Familia</dt><dd class="font-medium">Cítrica</dd>
+        <dt class="text-ink-soft">Concentración</dt><dd class="font-medium">Eau de Cologne</dd>
+        <dt class="text-ink-soft">Contenido</dt><dd class="font-medium">100 ml</dd>
+        <dt class="text-ink-soft">Marca</dt><dd class="font-medium">Petit Atelier, Marca de demostración</dd>
+      </dl>
+    </div>
+    <div class="lg:col-span-7">
+      <h2 class="text-2xl font-semibold">Cómo evoluciona en la piel</h2>
+      <ol class="mt-6 grid gap-px overflow-hidden rounded-sm border border-line bg-line sm:grid-cols-3">
+        <li class="bg-surface p-5">
+          <p class="text-sm font-semibold text-pine">Salida</p>
+          <p class="mt-1 text-xs text-ink-soft">Primeros 15 minutos</p>
+          <p class="mt-3 leading-relaxed">Limón, menta</p>
+        </li>
+        <li class="bg-surface p-5">
+          <p class="text-sm font-semibold text-pine">Corazón</p>
+          <p class="mt-1 text-xs text-ink-soft">De 30 minutos a 3 horas</p>
+          <p class="mt-3 leading-relaxed">Hoja de naranjo</p>
+        </li>
+        <li class="bg-surface p-5">
+          <p class="text-sm font-semibold text-pine">Fondo</p>
+          <p class="mt-1 text-xs text-ink-soft">Lo que queda al final del día</p>
+          <p class="mt-3 leading-relaxed">Cedro suave</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  
+  <section class="mt-20" aria-labelledby="rel-title">
+    <h2 id="rel-title" class="text-2xl font-semibold sm:text-3xl">También te puede gustar</h2>
+    <div class="mt-8 grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-4 lg:gap-x-6">
+      
+<article class="product-card group relative flex flex-col">
+  <a href="/perfume/petit-atelier-colonia-lavanda-suave-100ml/" class="photo-mat block aspect-[4/5]" tabindex="-1" aria-hidden="true">
+    <img src="/static/img/products/kids-lavanda.webp" alt="" width="800" height="1000" loading="lazy" decoding="async" class="">
+    <span class="absolute top-3 left-3 flex flex-col items-start gap-1.5">
+      
+    </span>
+  </a>
+
+  <div class="mt-3 flex flex-1 flex-col">
+    <p class="text-[13px] text-ink-soft">Petit Atelier</p>
+    <h3 class="mt-0.5 text-[15px] leading-snug font-semibold sm:text-base">
+      <a href="/perfume/petit-atelier-colonia-lavanda-suave-100ml/" class="hover:underline hover:decoration-1 hover:underline-offset-4">Colonia Lavanda Suave</a>
+    </h3>
+    <p class="mt-1 line-clamp-2 text-sm leading-relaxed text-ink-soft">Lavanda y flor de algodón para después del baño. Sin colorantes.</p>
+    <p class="mt-1.5 text-[13px] text-ink-soft">Eau de Cologne · 100 ml</p>
+
+    
+      <p class="mt-2"><span class="badge badge-coupon"><i class="ph ph-ticket" aria-hidden="true"></i>Cupón PETIT15: 15% extra</span></p>
+    
+
+    <div class="mt-auto pt-3">
+      <p class="flex flex-wrap items-baseline gap-x-2">
+        <span class="price text-lg "><span class="sr-only">Precio: </span>$24.00</span>
+        
+      </p>
+      <form method="post" action="/carrito/agregar/135/" class="mt-3" data-add-to-cart>
+        <input type="hidden" name="csrfmiddlewaretoken" value="z4SnRJenmPb7sYiMlgjMDSBdywN7bFf4X9mByeOgg1e9p1iCvElvswnBqr7FwRqP">
+        <input type="hidden" name="next" value="/perfume/petit-atelier-colonia-citrica-menta-100ml/">
+        
+          <button type="submit" class="btn btn-secondary btn-sm btn-block" aria-label="Agregar Petit Atelier Colonia Lavanda Suave al carrito">
+            <i class="ph ph-handbag" aria-hidden="true"></i>Agregar
+          </button>
+        
+      </form>
+    </div>
+  </div>
+</article>
+
+<article class="product-card group relative flex flex-col">
+  <a href="/perfume/petit-atelier-agua-de-fresa-y-flor-100ml/" class="photo-mat block aspect-[4/5]" tabindex="-1" aria-hidden="true">
+    <img src="/static/img/products/kids-fresa.webp" alt="" width="800" height="1000" loading="lazy" decoding="async" class="">
+    <span class="absolute top-3 left-3 flex flex-col items-start gap-1.5">
+      
+    </span>
+  </a>
+
+  <div class="mt-3 flex flex-1 flex-col">
+    <p class="text-[13px] text-ink-soft">Petit Atelier</p>
+    <h3 class="mt-0.5 text-[15px] leading-snug font-semibold sm:text-base">
+      <a href="/perfume/petit-atelier-agua-de-fresa-y-flor-100ml/" class="hover:underline hover:decoration-1 hover:underline-offset-4">Agua de Fresa y Flor</a>
+    </h3>
+    <p class="mt-1 line-clamp-2 text-sm leading-relaxed text-ink-soft">Fresa y flor de naranjo con un toque de vainilla suave.</p>
+    <p class="mt-1.5 text-[13px] text-ink-soft">Eau de Cologne · 100 ml</p>
+
+    
+      <p class="mt-2"><span class="badge badge-coupon"><i class="ph ph-ticket" aria-hidden="true"></i>Cupón PETIT15: 15% extra</span></p>
+    
+
+    <div class="mt-auto pt-3">
+      <p class="flex flex-wrap items-baseline gap-x-2">
+        <span class="price text-lg "><span class="sr-only">Precio: </span>$26.00</span>
+        
+      </p>
+      <form method="post" action="/carrito/agregar/137/" class="mt-3" data-add-to-cart>
+        <input type="hidden" name="csrfmiddlewaretoken" value="z4SnRJenmPb7sYiMlgjMDSBdywN7bFf4X9mByeOgg1e9p1iCvElvswnBqr7FwRqP">
+        <input type="hidden" name="next" value="/perfume/petit-atelier-colonia-citrica-menta-100ml/">
+        
+          <button type="submit" class="btn btn-secondary btn-sm btn-block" aria-label="Agregar Petit Atelier Agua de Fresa y Flor al carrito">
+            <i class="ph ph-handbag" aria-hidden="true"></i>Agregar
+          </button>
+        
+      </form>
+    </div>
+  </div>
+</article>
+
+<article class="product-card group relative flex flex-col">
+  <a href="/perfume/petit-atelier-bruma-algodon-y-pera-200ml/" class="photo-mat block aspect-[4/5]" tabindex="-1" aria-hidden="true">
+    <img src="/static/img/products/kids-bruma-pera.webp" alt="" width="800" height="1000" loading="lazy" decoding="async" class="">
+    <span class="absolute top-3 left-3 flex flex-col items-start gap-1.5">
+      
+        <span class="badge badge-sale">-21%</span>
+      
+    </span>
+  </a>
+
+  <div class="mt-3 flex flex-1 flex-col">
+    <p class="text-[13px] text-ink-soft">Petit Atelier</p>
+    <h3 class="mt-0.5 text-[15px] leading-snug font-semibold sm:text-base">
+      <a href="/perfume/petit-atelier-bruma-algodon-y-pera-200ml/" class="hover:underline hover:decoration-1 hover:underline-offset-4">Bruma Algodón y Pera</a>
+    </h3>
+    <p class="mt-1 line-clamp-2 text-sm leading-relaxed text-ink-soft">Bruma corporal ligera con pera y algodón limpio.</p>
+    <p class="mt-1.5 text-[13px] text-ink-soft">Bruma corporal · 200 ml</p>
+
+    
+      <p class="mt-2"><span class="badge badge-coupon"><i class="ph ph-ticket" aria-hidden="true"></i>Cupón PETIT15: 15% extra</span></p>
+    
+
+    <div class="mt-auto pt-3">
+      <p class="flex flex-wrap items-baseline gap-x-2">
+        <span class="price text-lg text-sale"><span class="sr-only">Precio: </span>$19.00</span>
+        <span class="price-old text-sm"><span class="sr-only">Antes: </span>$24.00</span>
+      </p>
+      <form method="post" action="/carrito/agregar/136/" class="mt-3" data-add-to-cart>
+        <input type="hidden" name="csrfmiddlewaretoken" value="z4SnRJenmPb7sYiMlgjMDSBdywN7bFf4X9mByeOgg1e9p1iCvElvswnBqr7FwRqP">
+        <input type="hidden" name="next" value="/perfume/petit-atelier-colonia-citrica-menta-100ml/">
+        
+          <button type="submit" class="btn btn-secondary btn-sm btn-block" aria-label="Agregar Petit Atelier Bruma Algodón y Pera al carrito">
+            <i class="ph ph-handbag" aria-hidden="true"></i>Agregar
+          </button>
+        
+      </form>
+    </div>
+  </div>
+</article>
+
+    </div>
+  </section>
+  
+</div>
+
+  </main>
+
+  <footer class="mt-24 bg-pine text-surface">
+  <div class="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-12">
+    <div class="max-w-sm">
+      <p class="text-2xl font-semibold tracking-[-0.035em]">Nota Alta</p>
+      <p class="mt-3 text-on-pine-soft leading-relaxed">Perfumería online en Panamá. Marcas originales, precios claros y envío a todo el país.</p>
+    </div>
+    <nav aria-label="Tienda">
+      <h2 class="text-sm font-semibold">Tienda</h2>
+      <ul class="mt-4 space-y-2.5 text-on-pine-soft">
+        <li><a class="hover:text-surface" href="/categoria/caballeros/">Caballeros</a></li>
+        <li><a class="hover:text-surface" href="/categoria/damas/">Damas</a></li>
+        <li><a class="hover:text-surface" href="/categoria/ninos/">Niños</a></li>
+        <li><a class="hover:text-surface" href="/marcas/">Marcas</a></li>
+        <li><a class="hover:text-surface" href="/tienda/?oferta=1">Ofertas</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Ayuda">
+      <h2 class="text-sm font-semibold">Ayuda</h2>
+      <ul class="mt-4 space-y-2.5 text-on-pine-soft">
+        <li><a class="hover:text-surface" href="/cuenta/">Mis pedidos</a></li>
+        <li><a class="hover:text-surface" href="/contacto/">Contacto</a></li>
+        <li><a class="hover:text-surface" href="/nosotros/">Nosotros</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2 class="text-sm font-semibold">Pagos y envíos</h2>
+      <ul class="mt-4 space-y-2.5 text-on-pine-soft">
+        <li>Tarjeta, Yappy, ACH o contra entrega</li>
+        <li>Ciudad de Panamá: 24 a 48 horas</li>
+        <li>Interior: 3 a 5 días hábiles</li>
+        <li>Precios con ITBMS incluido</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-surface/15">
+    <div class="container-page flex flex-col gap-2 py-6 text-sm text-on-pine-soft sm:flex-row sm:justify-between">
+      <p>© 2026 Nota Alta. Tienda de demostración: precios y pedidos de ejemplo.</p>
+      <p>hola@notaalta.example</p>
+    </div>
+  </div>
+</footer>
+
+  <div class="pointer-events-none fixed inset-x-4 bottom-4 z-50 flex flex-col items-end gap-2 sm:inset-x-auto sm:right-6 sm:bottom-6" data-toasts role="status" aria-live="polite">
+  
+</div>
+<template id="toast-template">
+  <div class="toast" data-toast>
+    <i class="ph ph-check-circle mt-0.5 text-xl text-success" aria-hidden="true" data-toast-icon></i>
+    <p class="flex-1" data-toast-text></p>
+    <button type="button" class="-m-1 grid size-8 shrink-0 place-items-center rounded-sm text-ink-soft hover:bg-sage hover:text-ink" data-toast-close aria-label="Cerrar aviso"><i class="ph ph-x" aria-hidden="true"></i></button>
+  </div>
+</template>
+
+  <script src="/static/js/app.js" defer></script>
+  
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto · Nota Alta</title>
+  <meta name="description" content="Perfumes originales de Chanel, Versace, Lancôme y más. Envío en Ciudad de Panamá e interior, pago con tarjeta, Yappy o ACH.">
+  <meta name="theme-color" content="#23463c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/regular/style.css">
+  <link rel="stylesheet" href="app.css">
+  
+</head>
+<body class="min-h-dvh flex flex-col">
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+  <div class="bg-pine text-surface">
+  <p class="container-page flex h-9 items-center justify-center text-center text-[13px] font-medium">
+    Envío gratis en Ciudad de Panamá desde $60.<span class="hidden sm:inline">&nbsp;Paga con tarjeta, Yappy o ACH.</span>
+  </p>
+</div>
+
+<header class="sticky top-0 z-40 border-b border-line bg-ground" data-header>
+  <div class="container-page">
+    <div class="flex h-16 items-center gap-2 sm:gap-4">
+      <button type="button" class="btn-icon -ml-2 lg:hidden" data-dialog-open="menu-movil" aria-label="Abrir menú" aria-haspopup="dialog">
+        <i class="ph ph-list text-2xl" aria-hidden="true"></i>
+      </button>
+
+      <a href="/" class="mr-2 shrink-0 text-[22px] leading-none font-semibold tracking-[-0.035em] lg:mr-6" aria-label="Nota Alta, ir al inicio">
+        Nota&nbsp;Alta
+      </a>
+
+      <form action="/tienda/" method="get" role="search" class="relative hidden max-w-xl flex-1 md:block">
+        <label for="buscar-escritorio" class="sr-only">Buscar perfumes</label>
+        <i class="ph ph-magnifying-glass pointer-events-none absolute top-1/2 left-3 -translate-y-1/2 text-lg text-ink-soft" aria-hidden="true"></i>
+        <input id="buscar-escritorio" type="search" name="q" value="" placeholder="Busca por perfume, marca o nota (ej. vainilla)" class="input pl-10" autocomplete="off">
+      </form>
+
+      <nav aria-label="Cuenta y carrito" class="ml-auto flex items-center gap-1">
+        
+        <a href="/cuenta/" class="btn-icon" aria-label="Iniciar sesión">
+          <i class="ph ph-user text-[22px]" aria-hidden="true"></i>
+        </a>
+        <a href="/carrito/" class="btn-icon -mr-2" data-cart-link aria-label="Carrito, 0 artículos">
+          <i class="ph ph-handbag text-[22px]" aria-hidden="true"></i>
+          <span data-cart-count class="absolute top-1 right-0.5 grid h-[18px] min-w-[18px] place-items-center rounded-full bg-sale px-1 text-[11px] font-semibold text-white hidden" aria-hidden="true">0</span>
+        </a>
+      </nav>
+    </div>
+
+    <form action="/tienda/" method="get" role="search" class="relative pb-3 md:hidden">
+      <label for="buscar-movil" class="sr-only">Buscar perfumes</label>
+      <i class="ph ph-magnifying-glass pointer-events-none absolute top-[22px] left-3 -translate-y-1/2 text-lg text-ink-soft" aria-hidden="true"></i>
+      <input id="buscar-movil" type="search" name="q" value="" placeholder="Busca perfume, marca o nota" class="input pl-10" autocomplete="off">
+    </form>
+
+    <nav aria-label="Principal" class="hidden lg:block">
+      <ul class="-mb-px flex gap-8 text-[15px]">
+        
+          <li>
+            <a href="/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Inicio</a>
+          </li>
+        
+          <li>
+            <a href="/categoria/caballeros/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Caballeros</a>
+          </li>
+        
+          <li>
+            <a href="/categoria/damas/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Damas</a>
+          </li>
+        
+          <li>
+            <a href="/categoria/ninos/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Niños</a>
+          </li>
+        
+          <li>
+            <a href="/marcas/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Marcas</a>
+          </li>
+        
+          <li>
+            <a href="/nosotros/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Nosotros</a>
+          </li>
+        
+          <li>
+            <a href="/contacto/" class="inline-flex h-11 items-center border-b-2 transition-colors border-pine font-semibold text-ink" aria-current="page">Contacto</a>
+          </li>
+        
+        <li class="ml-auto">
+          <a href="/tienda/?oferta=1" class="inline-flex h-11 items-center gap-1.5 border-b-2 border-transparent font-medium text-sale hover:border-sale/40">
+            <i class="ph ph-tag" aria-hidden="true"></i>Ofertas
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<dialog id="menu-movil" class="sheet sheet-left" aria-label="Menú">
+  <div class="flex h-16 items-center justify-between border-b border-line px-4">
+    <span class="text-xl font-semibold tracking-[-0.035em]">Nota Alta</span>
+    <button type="button" class="btn-icon -mr-2" data-dialog-close aria-label="Cerrar menú"><i class="ph ph-x text-2xl" aria-hidden="true"></i></button>
+  </div>
+  <nav aria-label="Principal (móvil)" class="px-4 py-2">
+    <ul class="divide-y divide-line">
+      
+        <li>
+          <a href="/" class="flex h-14 items-center justify-between text-lg " >
+            Inicio<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/categoria/caballeros/" class="flex h-14 items-center justify-between text-lg " >
+            Caballeros<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/categoria/damas/" class="flex h-14 items-center justify-between text-lg " >
+            Damas<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/categoria/ninos/" class="flex h-14 items-center justify-between text-lg " >
+            Niños<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/marcas/" class="flex h-14 items-center justify-between text-lg " >
+            Marcas<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/nosotros/" class="flex h-14 items-center justify-between text-lg " >
+            Nosotros<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/contacto/" class="flex h-14 items-center justify-between text-lg font-semibold" aria-current="page">
+            Contacto<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+      <li>
+        <a href="/tienda/?oferta=1" class="flex h-14 items-center justify-between text-lg font-medium text-sale">Ofertas<i class="ph ph-caret-right" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <div class="mt-auto border-t border-line p-4 text-sm text-ink-soft">
+    
+      <a href="/cuenta/ingresar/" class="link">Iniciar sesión</a> <span aria-hidden="true">/</span> <a href="/cuenta/registro/" class="link">Crear cuenta</a>
+    
+  </div>
+</dialog>
+
+
+  <main id="contenido" class="flex-1" tabindex="-1">
+    
+<div class="container-page grid gap-12 pt-10 lg:grid-cols-12">
+  <div class="lg:col-span-5">
+    <h1 class="text-4xl font-semibold sm:text-5xl">Contacto</h1>
+    <p class="mt-4 max-w-[46ch] text-lg leading-relaxed text-ink-soft">¿Dudas con un pedido o buscas una recomendación? Respondemos por correo en menos de un día hábil.</p>
+
+    <ul class="mt-10 space-y-6 text-[15px]">
+      <li class="flex gap-4"><i class="ph ph-envelope-simple mt-0.5 text-2xl text-pine" aria-hidden="true"></i><div><p class="font-semibold">Correo</p><a href="mailto:hola@notaalta.example" class="link">hola@notaalta.example</a></div></li>
+      <li class="flex gap-4"><i class="ph ph-phone mt-0.5 text-2xl text-pine" aria-hidden="true"></i><div><p class="font-semibold">Teléfono</p><p class="text-ink-soft">+507 6000-0000</p></div></li>
+      <li class="flex gap-4"><i class="ph ph-clock mt-0.5 text-2xl text-pine" aria-hidden="true"></i><div><p class="font-semibold">Horario de atención</p><p class="text-ink-soft">Lunes a sábado, de 9:00 a 18:00</p></div></li>
+      <li class="flex gap-4"><i class="ph ph-package mt-0.5 text-2xl text-pine" aria-hidden="true"></i><div><p class="font-semibold">Sobre un pedido</p><p class="text-ink-soft">Incluye el número (por ejemplo, NA-00012) para ubicarlo rápido.</p></div></li>
+    </ul>
+  </div>
+
+  <div class="lg:col-span-6 lg:col-start-7">
+    <form method="post" class="panel grid gap-5 p-6 sm:p-8" novalidate>
+      <input type="hidden" name="csrfmiddlewaretoken" value="wxq60AB9GLfU9F1tSHmZ5ByfXNuPjCPAUCUkH5b2AXiW6I1j25oIUfkDPIOnEO0l">
+      <h2 class="text-xl font-semibold">Envíanos un mensaje</h2>
+      <div class="grid gap-5 sm:grid-cols-2">
+        
+<div class="">
+  <label for="id_name" class="label">
+    Nombre<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <input type="text" name="name" autocomplete="name" maxlength="120" class="input" required id="id_name">
+  
+  
+</div>
+
+        
+<div class="">
+  <label for="id_email" class="label">
+    Correo<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <input type="email" name="email" autocomplete="email" maxlength="254" class="input" required id="id_email">
+  
+  
+</div>
+
+      </div>
+      
+<div class="">
+  <label for="id_topic" class="label">
+    ¿Sobre qué nos escribes?<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <select name="topic" class="select" id="id_topic">
+  <option value="pedido">Un pedido</option>
+
+  <option value="producto" selected>Un producto</option>
+
+  <option value="otro">Otro tema</option>
+
+</select>
+  
+  
+</div>
+
+      
+<div class="">
+  <label for="id_message" class="label">
+    Mensaje<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <textarea name="message" cols="40" rows="10" class="input min-h-32" required id="id_message">
+</textarea>
+  
+  
+</div>
+
+      <button type="submit" class="btn btn-primary justify-self-start">Enviar mensaje</button>
+    </form>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="mt-24 bg-pine text-surface">
+  <div class="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-12">
+    <div class="max-w-sm">
+      <p class="text-2xl font-semibold tracking-[-0.035em]">Nota Alta</p>
+      <p class="mt-3 text-on-pine-soft leading-relaxed">Perfumería online en Panamá. Marcas originales, precios claros y envío a todo el país.</p>
+    </div>
+    <nav aria-label="Tienda">
+      <h2 class="text-sm font-semibold">Tienda</h2>
+      <ul class="mt-4 space-y-2.5 text-on-pine-soft">
+        <li><a class="hover:text-surface" href="/categoria/caballeros/">Caballeros</a></li>
+        <li><a class="hover:text-surface" href="/categoria/damas/">Damas</a></li>
+        <li><a class="hover:text-surface" href="/categoria/ninos/">Niños</a></li>
+        <li><a class="hover:text-surface" href="/marcas/">Marcas</a></li>
+        <li><a class="hover:text-surface" href="/tienda/?oferta=1">Ofertas</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Ayuda">
+      <h2 class="text-sm font-semibold">Ayuda</h2>
+      <ul class="mt-4 space-y-2.5 text-on-pine-soft">
+        <li><a class="hover:text-surface" href="/cuenta/">Mis pedidos</a></li>
+        <li><a class="hover:text-surface" href="/contacto/">Contacto</a></li>
+        <li><a class="hover:text-surface" href="/nosotros/">Nosotros</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2 class="text-sm font-semibold">Pagos y envíos</h2>
+      <ul class="mt-4 space-y-2.5 text-on-pine-soft">
+        <li>Tarjeta, Yappy, ACH o contra entrega</li>
+        <li>Ciudad de Panamá: 24 a 48 horas</li>
+        <li>Interior: 3 a 5 días hábiles</li>
+        <li>Precios con ITBMS incluido</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-surface/15">
+    <div class="container-page flex flex-col gap-2 py-6 text-sm text-on-pine-soft sm:flex-row sm:justify-between">
+      <p>© 2026 Nota Alta. Tienda de demostración: precios y pedidos de ejemplo.</p>
+      <p>hola@notaalta.example</p>
+    </div>
+  </div>
+</footer>
+
+  <div class="pointer-events-none fixed inset-x-4 bottom-4 z-50 flex flex-col items-end gap-2 sm:inset-x-auto sm:right-6 sm:bottom-6" data-toasts role="status" aria-live="polite">
+  
+</div>
+<template id="toast-template">
+  <div class="toast" data-toast>
+    <i class="ph ph-check-circle mt-0.5 text-xl text-success" aria-hidden="true" data-toast-icon></i>
+    <p class="flex-1" data-toast-text></p>
+    <button type="button" class="-m-1 grid size-8 shrink-0 place-items-center rounded-sm text-ink-soft hover:bg-sage hover:text-ink" data-toast-close aria-label="Cerrar aviso"><i class="ph ph-x" aria-hidden="true"></i></button>
+  </div>
+</template>
+
+  <script src="/static/js/app.js" defer></script>
+  
+</body>
+</html>

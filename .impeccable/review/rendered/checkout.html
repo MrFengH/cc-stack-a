@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finalizar compra · Nota Alta</title>
+  <meta name="description" content="Perfumes originales de Chanel, Versace, Lancôme y más. Envío en Ciudad de Panamá e interior, pago con tarjeta, Yappy o ACH.">
+  <meta name="theme-color" content="#23463c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/regular/style.css">
+  <link rel="stylesheet" href="app.css">
+  
+</head>
+<body class="min-h-dvh flex flex-col">
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+  <div class="bg-pine text-surface">
+  <p class="container-page flex h-9 items-center justify-center text-center text-[13px] font-medium">
+    Envío gratis en Ciudad de Panamá desde $60.<span class="hidden sm:inline">&nbsp;Paga con tarjeta, Yappy o ACH.</span>
+  </p>
+</div>
+
+<header class="sticky top-0 z-40 border-b border-line bg-ground" data-header>
+  <div class="container-page">
+    <div class="flex h-16 items-center gap-2 sm:gap-4">
+      <button type="button" class="btn-icon -ml-2 lg:hidden" data-dialog-open="menu-movil" aria-label="Abrir menú" aria-haspopup="dialog">
+        <i class="ph ph-list text-2xl" aria-hidden="true"></i>
+      </button>
+
+      <a href="/" class="mr-2 shrink-0 text-[22px] leading-none font-semibold tracking-[-0.035em] lg:mr-6" aria-label="Nota Alta, ir al inicio">
+        Nota&nbsp;Alta
+      </a>
+
+      <form action="/tienda/" method="get" role="search" class="relative hidden max-w-xl flex-1 md:block">
+        <label for="buscar-escritorio" class="sr-only">Buscar perfumes</label>
+        <i class="ph ph-magnifying-glass pointer-events-none absolute top-1/2 left-3 -translate-y-1/2 text-lg text-ink-soft" aria-hidden="true"></i>
+        <input id="buscar-escritorio" type="search" name="q" value="" placeholder="Busca por perfume, marca o nota (ej. vainilla)" class="input pl-10" autocomplete="off">
+      </form>
+
+      <nav aria-label="Cuenta y carrito" class="ml-auto flex items-center gap-1">
+        
+        <a href="/cuenta/" class="btn-icon" aria-label="Iniciar sesión">
+          <i class="ph ph-user text-[22px]" aria-hidden="true"></i>
+        </a>
+        <a href="/carrito/" class="btn-icon -mr-2" data-cart-link aria-label="Carrito, 1 artículo">
+          <i class="ph ph-handbag text-[22px]" aria-hidden="true"></i>
+          <span data-cart-count class="absolute top-1 right-0.5 grid h-[18px] min-w-[18px] place-items-center rounded-full bg-sale px-1 text-[11px] font-semibold text-white " aria-hidden="true">1</span>
+        </a>
+      </nav>
+    </div>
+
+    <form action="/tienda/" method="get" role="search" class="relative pb-3 md:hidden">
+      <label for="buscar-movil" class="sr-only">Buscar perfumes</label>
+      <i class="ph ph-magnifying-glass pointer-events-none absolute top-[22px] left-3 -translate-y-1/2 text-lg text-ink-soft" aria-hidden="true"></i>
+      <input id="buscar-movil" type="search" name="q" value="" placeholder="Busca perfume, marca o nota" class="input pl-10" autocomplete="off">
+    </form>
+
+    <nav aria-label="Principal" class="hidden lg:block">
+      <ul class="-mb-px flex gap-8 text-[15px]">
+        
+          <li>
+            <a href="/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Inicio</a>
+          </li>
+        
+          <li>
+            <a href="/categoria/caballeros/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Caballeros</a>
+          </li>
+        
+          <li>
+            <a href="/categoria/damas/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Damas</a>
+          </li>
+        
+          <li>
+            <a href="/categoria/ninos/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Niños</a>
+          </li>
+        
+          <li>
+            <a href="/marcas/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Marcas</a>
+          </li>
+        
+          <li>
+            <a href="/nosotros/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Nosotros</a>
+          </li>
+        
+          <li>
+            <a href="/contacto/" class="inline-flex h-11 items-center border-b-2 transition-colors border-transparent text-ink-soft hover:border-line-strong hover:text-ink" >Contacto</a>
+          </li>
+        
+        <li class="ml-auto">
+          <a href="/tienda/?oferta=1" class="inline-flex h-11 items-center gap-1.5 border-b-2 border-transparent font-medium text-sale hover:border-sale/40">
+            <i class="ph ph-tag" aria-hidden="true"></i>Ofertas
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<dialog id="menu-movil" class="sheet sheet-left" aria-label="Menú">
+  <div class="flex h-16 items-center justify-between border-b border-line px-4">
+    <span class="text-xl font-semibold tracking-[-0.035em]">Nota Alta</span>
+    <button type="button" class="btn-icon -mr-2" data-dialog-close aria-label="Cerrar menú"><i class="ph ph-x text-2xl" aria-hidden="true"></i></button>
+  </div>
+  <nav aria-label="Principal (móvil)" class="px-4 py-2">
+    <ul class="divide-y divide-line">
+      
+        <li>
+          <a href="/" class="flex h-14 items-center justify-between text-lg " >
+            Inicio<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/categoria/caballeros/" class="flex h-14 items-center justify-between text-lg " >
+            Caballeros<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/categoria/damas/" class="flex h-14 items-center justify-between text-lg " >
+            Damas<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/categoria/ninos/" class="flex h-14 items-center justify-between text-lg " >
+            Niños<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/marcas/" class="flex h-14 items-center justify-between text-lg " >
+            Marcas<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/nosotros/" class="flex h-14 items-center justify-between text-lg " >
+            Nosotros<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/contacto/" class="flex h-14 items-center justify-between text-lg " >
+            Contacto<i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+      <li>
+        <a href="/tienda/?oferta=1" class="flex h-14 items-center justify-between text-lg font-medium text-sale">Ofertas<i class="ph ph-caret-right" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <div class="mt-auto border-t border-line p-4 text-sm text-ink-soft">
+    
+      <a href="/cuenta/ingresar/" class="link">Iniciar sesión</a> <span aria-hidden="true">/</span> <a href="/cuenta/registro/" class="link">Crear cuenta</a>
+    
+  </div>
+</dialog>
+
+
+  <main id="contenido" class="flex-1" tabindex="-1">
+    
+<div class="container-page pt-8">
+  <ol class="flex flex-wrap items-center gap-2 text-sm" aria-label="Pasos de la compra">
+    <li><a href="/carrito/" class="text-ink-soft hover:text-ink hover:underline">1. Carrito</a></li>
+    <li aria-hidden="true" class="text-ink-soft"><i class="ph ph-caret-right"></i></li>
+    <li aria-current="step" class="font-semibold">2. Datos, envío y pago</li>
+    <li aria-hidden="true" class="text-ink-soft"><i class="ph ph-caret-right"></i></li>
+    <li class="text-ink-soft">3. Confirmación</li>
+  </ol>
+  <h1 class="mt-4 text-4xl font-semibold sm:text-5xl">Finalizar compra</h1>
+  
+    <p class="mt-3 text-ink-soft">¿Ya tienes cuenta? <a href="/cuenta/ingresar/?next=/checkout/" class="link font-medium text-ink">Inicia sesión</a> para usar tus datos guardados y ver el pedido en tu perfil.</p>
+  
+
+  <form method="post" novalidate class="mt-8 grid gap-10 lg:grid-cols-12 lg:gap-12">
+    <input type="hidden" name="csrfmiddlewaretoken" value="RTIeFGli6SzmG8cOGFkd6qiWWTNN8JUGfYcsmbVb04CoDbcEQ3mWV44kOO7ltV5r">
+    <div class="space-y-10 lg:col-span-7">
+      
+
+      <fieldset>
+        <legend class="mb-5 text-xl font-semibold">Tus datos</legend>
+        <div class="grid gap-5 sm:grid-cols-2">
+          
+<div class="sm:col-span-2">
+  <label for="id_full_name" class="label">
+    Nombre completo<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <input type="text" name="full_name" autocomplete="name" maxlength="120" class="input" required id="id_full_name">
+  
+  
+</div>
+
+          
+<div class="">
+  <label for="id_email" class="label">
+    Correo electrónico<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <input type="email" name="email" autocomplete="email" maxlength="254" class="input" aria-describedby="id_email_help" required id="id_email">
+  <p id="id_email_help" class="help">Te enviaremos la confirmación y el seguimiento del pedido.</p>
+  
+</div>
+
+          
+<div class="">
+  <label for="id_phone" class="label">
+    Teléfono celular<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <input type="text" name="phone" autocomplete="tel" inputmode="tel" placeholder="6123-4567" maxlength="30" class="input" aria-describedby="id_phone_help" required id="id_phone">
+  <p id="id_phone_help" class="help">El repartidor te llamará a este número.</p>
+  
+</div>
+
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="mb-5 text-xl font-semibold">Dirección de entrega</legend>
+        <div class="grid gap-5 sm:grid-cols-2">
+          
+<div class="">
+  <label for="id_province" class="label">
+    Provincia<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <select name="province" class="select" autocomplete="address-level1" required id="id_province">
+  <option value="" selected>Selecciona una provincia</option>
+
+  <option value="panama">Panamá</option>
+
+  <option value="panama-oeste">Panamá Oeste</option>
+
+  <option value="colon">Colón</option>
+
+  <option value="chiriqui">Chiriquí</option>
+
+  <option value="cocle">Coclé</option>
+
+  <option value="herrera">Herrera</option>
+
+  <option value="los-santos">Los Santos</option>
+
+  <option value="veraguas">Veraguas</option>
+
+  <option value="bocas-del-toro">Bocas del Toro</option>
+
+  <option value="darien">Darién</option>
+
+  <option value="guna-yala">Comarca Guna Yala</option>
+
+  <option value="ngabe-bugle">Comarca Ngäbe-Buglé</option>
+
+  <option value="embera-wounaan">Comarca Emberá-Wounaan</option>
+
+</select>
+  
+  
+</div>
+
+          
+<div class="">
+  <label for="id_district" class="label">
+    Distrito o corregimiento<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <input type="text" name="district" autocomplete="address-level2" placeholder="Ej.: San Francisco" maxlength="80" class="input" required id="id_district">
+  
+  
+</div>
+
+          
+<div class="sm:col-span-2">
+  <label for="id_address" class="label">
+    Dirección<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <input type="text" name="address" autocomplete="street-address" placeholder="Calle, edificio, apartamento" maxlength="200" class="input" required id="id_address">
+  
+  
+</div>
+
+          
+<div class="sm:col-span-2">
+  <label for="id_reference" class="label">
+    Punto de referencia (opcional)
+  </label>
+  <input type="text" name="reference" placeholder="Ej.: frente al parque, portón verde" maxlength="200" class="input" id="id_reference">
+  
+  
+</div>
+
+        </div>
+      </fieldset>
+
+      <fieldset >
+        <legend class="mb-5 text-xl font-semibold">Método de envío</legend>
+        <div class="grid gap-3">
+          
+            <label class="choice">
+              <input type="radio" name="shipping_method" value="ciudad" data-cost="4.50" checked id="id_shipping_method">
+              <span class="flex-1">
+                <span class="block font-semibold">Envío Ciudad de Panamá</span>
+                <span class="text-sm text-ink-soft">24 a 48 horas. Gratis desde $60</span>
+              </span>
+              <span class="price">$4.50</span>
+            </label>
+          
+            <label class="choice">
+              <input type="radio" name="shipping_method" value="interior" data-cost="9.00"  id="id_shipping_method_1">
+              <span class="flex-1">
+                <span class="block font-semibold">Envío al interior</span>
+                <span class="text-sm text-ink-soft">3 a 5 días hábiles</span>
+              </span>
+              <span class="price">$9.00</span>
+            </label>
+          
+            <label class="choice">
+              <input type="radio" name="shipping_method" value="retiro" data-cost="0.00"  id="id_shipping_method_2">
+              <span class="flex-1">
+                <span class="block font-semibold">Retiro en tienda</span>
+                <span class="text-sm text-ink-soft">Listo en 4 horas</span>
+              </span>
+              <span class="price">Gratis</span>
+            </label>
+          
+        </div>
+        
+      </fieldset>
+
+      <fieldset >
+        <legend class="mb-5 text-xl font-semibold">Método de pago</legend>
+        <p class="-mt-3 mb-5 text-sm text-ink-soft">Tienda de demostración: ningún pago se procesa de verdad.</p>
+        <div class="grid gap-3 sm:grid-cols-2">
+          
+            <label class="choice">
+              <input type="radio" name="payment_method" value="tarjeta" checked id="id_payment_method">
+              <span>
+                <span class="block font-semibold">Tarjeta de crédito o débito</span>
+                <span class="text-sm text-ink-soft">Visa o Mastercard. Pago simulado en esta demo.</span>
+              </span>
+            </label>
+          
+            <label class="choice">
+              <input type="radio" name="payment_method" value="yappy"  id="id_payment_method_1">
+              <span>
+                <span class="block font-semibold">Yappy</span>
+                <span class="text-sm text-ink-soft">Recibirás la solicitud de pago en tu app Yappy.</span>
+              </span>
+            </label>
+          
+            <label class="choice">
+              <input type="radio" name="payment_method" value="ach"  id="id_payment_method_2">
+              <span>
+                <span class="block font-semibold">Transferencia ACH</span>
+                <span class="text-sm text-ink-soft">Te enviamos los datos de la cuenta por correo.</span>
+              </span>
+            </label>
+          
+            <label class="choice">
+              <input type="radio" name="payment_method" value="contra_entrega"  id="id_payment_method_3">
+              <span>
+                <span class="block font-semibold">Pago contra entrega</span>
+                <span class="text-sm text-ink-soft">Efectivo o tarjeta al recibir. Solo Ciudad de Panamá.</span>
+              </span>
+            </label>
+          
+        </div>
+        
+      </fieldset>
+    </div>
+
+    <aside class="lg:col-span-5" aria-labelledby="order-summary">
+      <div class="panel p-6 lg:sticky lg:top-[136px]" data-checkout-summary data-base="22.00">
+        <h2 id="order-summary" class="text-xl font-semibold">Tu pedido</h2>
+        <ul class="mt-5 divide-y divide-line" role="list">
+          
+            <li class="flex gap-3 py-3 first:pt-0">
+              <div class="photo-tile aspect-[4/5] w-14 shrink-0"><img src="/static/img/products/kids-citrica.webp" alt="" width="112" height="140" loading="lazy"></div>
+              <div class="min-w-0 flex-1 text-sm">
+                <p class="font-semibold leading-snug">Petit Atelier Colonia Cítrica Menta</p>
+                <p class="text-ink-soft">Eau de Cologne · 100 ml · Cant. 1</p>
+              </div>
+              <p class="price text-sm">$22.00</p>
+            </li>
+          
+        </ul>
+        <dl class="mt-4 space-y-2.5 border-t border-line pt-4 text-[15px]">
+          <div class="flex justify-between"><dt class="text-ink-soft">Subtotal</dt><dd>$22.00</dd></div>
+          
+          <div class="flex justify-between"><dt class="text-ink-soft">Envío</dt><dd data-shipping-cost>$4.50</dd></div>
+          <div class="flex items-baseline justify-between border-t border-line pt-4"><dt class="font-semibold">Total</dt><dd class="price text-2xl" data-grand-total aria-live="polite">$26.50</dd></div>
+        </dl>
+        <p class="mt-1 text-right text-xs text-ink-soft">ITBMS incluido</p>
+        <button type="submit" class="btn btn-primary btn-block mt-6 h-12">Confirmar pedido</button>
+        <p class="mt-3 flex items-center justify-center gap-1.5 text-xs text-ink-soft"><i class="ph ph-lock-simple" aria-hidden="true"></i>Tus datos solo se usan para entregar este pedido.</p>
+      </div>
+    </aside>
+  </form>
+</div>
+
+  </main>
+
+  <footer class="mt-24 bg-pine text-surface">
+  <div class="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-12">
+    <div class="max-w-sm">
+      <p class="text-2xl font-semibold tracking-[-0.035em]">Nota Alta</p>
+      <p class="mt-3 text-on-pine-soft leading-relaxed">Perfumería online en Panamá. Marcas originales, precios claros y envío a todo el país.</p>
+    </div>
+    <nav aria-label="Tienda">
+      <h2 class="text-sm font-semibold">Tienda</h2>
+      <ul class="mt-4 space-y-2.5 text-on-pine-soft">
+        <li><a class="hover:text-surface" href="/categoria/caballeros/">Caballeros</a></li>
+        <li><a class="hover:text-surface" href="/categoria/damas/">Damas</a></li>
+        <li><a class="hover:text-surface" href="/categoria/ninos/">Niños</a></li>
+        <li><a class="hover:text-surface" href="/marcas/">Marcas</a></li>
+        <li><a class="hover:text-surface" href="/tienda/?oferta=1">Ofertas</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Ayuda">
+      <h2 class="text-sm font-semibold">Ayuda</h2>
+      <ul class="mt-4 space-y-2.5 text-on-pine-soft">
+        <li><a class="hover:text-surface" href="/cuenta/">Mis pedidos</a></li>
+        <li><a class="hover:text-surface" href="/contacto/">Contacto</a></li>
+        <li><a class="hover:text-surface" href="/nosotros/">Nosotros</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2 class="text-sm font-semibold">Pagos y envíos</h2>
+      <ul class="mt-4 space-y-2.5 text-on-pine-soft">
+        <li>Tarjeta, Yappy, ACH o contra entrega</li>
+        <li>Ciudad de Panamá: 24 a 48 horas</li>
+        <li>Interior: 3 a 5 días hábiles</li>
+        <li>Precios con ITBMS incluido</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-surface/15">
+    <div class="container-page flex flex-col gap-2 py-6 text-sm text-on-pine-soft sm:flex-row sm:justify-between">
+      <p>© 2026 Nota Alta. Tienda de demostración: precios y pedidos de ejemplo.</p>
+      <p>hola@notaalta.example</p>
+    </div>
+  </div>
+</footer>
+
+  <div class="pointer-events-none fixed inset-x-4 bottom-4 z-50 flex flex-col items-end gap-2 sm:inset-x-auto sm:right-6 sm:bottom-6" data-toasts role="status" aria-live="polite">
+  
+</div>
+<template id="toast-template">
+  <div class="toast" data-toast>
+    <i class="ph ph-check-circle mt-0.5 text-xl text-success" aria-hidden="true" data-toast-icon></i>
+    <p class="flex-1" data-toast-text></p>
+    <button type="button" class="-m-1 grid size-8 shrink-0 place-items-center rounded-sm text-ink-soft hover:bg-sage hover:text-ink" data-toast-close aria-label="Cerrar aviso"><i class="ph ph-x" aria-hidden="true"></i></button>
+  </div>
+</template>
+
+  <script src="/static/js/app.js" defer></script>
+  
+</body>
+</html>

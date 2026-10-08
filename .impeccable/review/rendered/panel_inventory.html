@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventario · Panel · Nota Alta</title>
+  <meta name="description" content="Perfumes originales de Chanel, Versace, Lancôme y más. Envío en Ciudad de Panamá e interior, pago con tarjeta, Yappy o ACH.">
+  <meta name="theme-color" content="#23463c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/regular/style.css">
+  <link rel="stylesheet" href="app.css">
+  
+</head>
+<body class="min-h-dvh bg-ground">
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+  
+<aside class="fixed inset-y-0 left-0 z-30 hidden w-60 flex-col border-r border-line bg-surface lg:flex" aria-label="Panel">
+  <div class="flex h-16 shrink-0 items-center border-b border-line px-5">
+  <a href="/panel/" class="text-lg font-semibold tracking-[-0.03em]">Nota Alta <span class="font-normal text-ink-soft">Panel</span></a>
+</div>
+<nav class="flex-1 overflow-y-auto px-3 py-4" aria-label="Secciones del panel">
+  <ul class="space-y-0.5 text-[15px]">
+    
+      <li>
+        <a href="/panel/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-squares-four text-lg" aria-hidden="true"></i>Resumen
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/pedidos/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-receipt text-lg" aria-hidden="true"></i>Pedidos
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/clientes/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-users text-lg" aria-hidden="true"></i>Clientes
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/productos/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-flask text-lg" aria-hidden="true"></i>Productos
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/inventario/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors bg-pine-tint font-semibold text-pine" aria-current="page">
+          <i class="ph ph-stack text-lg" aria-hidden="true"></i>Inventario
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/marcas/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-bookmark-simple text-lg" aria-hidden="true"></i>Marcas
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+<div class="border-t border-line p-4 text-sm">
+  <a href="/" class="flex h-9 items-center gap-2 text-ink-soft hover:text-ink"><i class="ph ph-arrow-square-out" aria-hidden="true"></i>Ver tienda</a>
+  <a href="/admin/" class="flex h-9 items-center gap-2 text-ink-soft hover:text-ink"><i class="ph ph-gear-six" aria-hidden="true"></i>Admin de Django</a>
+  <p class="mt-2 truncate text-xs text-ink-soft" title="admin@notaalta.example">admin@notaalta.example</p>
+</div>
+
+</aside>
+<header class="sticky top-0 z-20 flex h-14 items-center gap-2 border-b border-line bg-surface px-4 lg:hidden">
+  <button type="button" class="btn-icon -ml-2" data-dialog-open="dash-menu" aria-label="Abrir menú del panel" aria-haspopup="dialog"><i class="ph ph-list text-2xl" aria-hidden="true"></i></button>
+  <span class="font-semibold tracking-[-0.03em]">Nota Alta · Panel</span>
+</header>
+<dialog id="dash-menu" class="sheet sheet-left bg-surface" aria-label="Menú del panel">
+  <button type="button" class="btn-icon absolute top-3 right-3" data-dialog-close aria-label="Cerrar menú"><i class="ph ph-x text-2xl" aria-hidden="true"></i></button>
+  <div class="flex h-16 shrink-0 items-center border-b border-line px-5">
+  <a href="/panel/" class="text-lg font-semibold tracking-[-0.03em]">Nota Alta <span class="font-normal text-ink-soft">Panel</span></a>
+</div>
+<nav class="flex-1 overflow-y-auto px-3 py-4" aria-label="Secciones del panel">
+  <ul class="space-y-0.5 text-[15px]">
+    
+      <li>
+        <a href="/panel/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-squares-four text-lg" aria-hidden="true"></i>Resumen
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/pedidos/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-receipt text-lg" aria-hidden="true"></i>Pedidos
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/clientes/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-users text-lg" aria-hidden="true"></i>Clientes
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/productos/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-flask text-lg" aria-hidden="true"></i>Productos
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/inventario/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors bg-pine-tint font-semibold text-pine" aria-current="page">
+          <i class="ph ph-stack text-lg" aria-hidden="true"></i>Inventario
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/marcas/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-bookmark-simple text-lg" aria-hidden="true"></i>Marcas
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+<div class="border-t border-line p-4 text-sm">
+  <a href="/" class="flex h-9 items-center gap-2 text-ink-soft hover:text-ink"><i class="ph ph-arrow-square-out" aria-hidden="true"></i>Ver tienda</a>
+  <a href="/admin/" class="flex h-9 items-center gap-2 text-ink-soft hover:text-ink"><i class="ph ph-gear-six" aria-hidden="true"></i>Admin de Django</a>
+  <p class="mt-2 truncate text-xs text-ink-soft" title="admin@notaalta.example">admin@notaalta.example</p>
+</div>
+
+</dialog>
+
+
+  <main id="contenido" class="flex-1" tabindex="-1">
+    
+<div class="lg:pl-60">
+  <div class="mx-auto max-w-[1400px] px-4 py-6 sm:px-6 lg:px-10 lg:py-8">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        
+        <h1 class="text-2xl font-semibold sm:text-3xl">Inventario</h1>
+        
+      </div>
+      <div class="flex flex-wrap gap-2"></div>
+    </div>
+    <div class="mt-6">
+<dl class="grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-line bg-line lg:grid-cols-4">
+  <div class="bg-surface p-4"><dt class="text-sm text-ink-soft">Unidades en stock</dt><dd class="mt-1 text-2xl font-semibold">245</dd></div>
+  <div class="bg-surface p-4"><dt class="text-sm text-ink-soft">Valor a precio de venta</dt><dd class="mt-1 text-2xl font-semibold">$23,509.00</dd></div>
+  <div class="bg-surface p-4"><dt class="text-sm"><a href="?stock=bajo" class="link text-ink-soft">Stock bajo (1 a 5)</a></dt><dd class="mt-1 text-2xl font-semibold text-warn">5</dd></div>
+  <div class="bg-surface p-4"><dt class="text-sm"><a href="?stock=agotado" class="link text-ink-soft">Agotados</a></dt><dd class="mt-1 text-2xl font-semibold text-danger">1</dd></div>
+</dl>
+
+<div class="mt-6"><form method="get" class="flex flex-wrap items-end gap-2" role="search" aria-label="Filtrar productos">
+  <div class="w-full sm:w-64">
+    <label for="pq" class="sr-only">Buscar</label>
+    <input id="pq" type="search" name="q" value="" class="input h-10" placeholder="Nombre o marca">
+  </div>
+  <label for="pmarca" class="sr-only">Marca</label>
+  <select id="pmarca" name="marca" class="select h-10 w-auto">
+    <option value="">Todas las marcas</option>
+    <option value="antonio-banderas" >Antonio Banderas</option><option value="chanel" >Chanel</option><option value="dolce-gabbana" >Dolce &amp; Gabbana</option><option value="escada" >Escada</option><option value="giorgio-armani" >Giorgio Armani</option><option value="guerlain" >Guerlain</option><option value="hugo-boss" >Hugo Boss</option><option value="lancome" >Lancôme</option><option value="miu-miu" >Miu Miu</option><option value="narciso-rodriguez" >Narciso Rodriguez</option><option value="petit-atelier" >Petit Atelier</option><option value="prada" >Prada</option><option value="versace" >Versace</option><option value="yves-saint-laurent" >Yves Saint Laurent</option>
+  </select>
+  <label for="pcat" class="sr-only">Categoría</label>
+  <select id="pcat" name="categoria" class="select h-10 w-auto">
+    <option value="">Todas las categorías</option>
+    <option value="caballeros" >Caballeros</option><option value="damas" >Damas</option><option value="ninos" >Niños</option>
+  </select>
+  <label for="pstock" class="sr-only">Stock</label>
+  <select id="pstock" name="stock" class="select h-10 w-auto">
+    <option value="">Cualquier stock</option>
+    <option value="bajo" >Stock bajo (1 a 5)</option>
+    <option value="agotado" >Agotados</option>
+  </select>
+  <button class="btn btn-secondary h-10">Filtrar</button>
+  
+</form>
+</div>
+
+<div class="panel mt-4 overflow-x-auto">
+  <table class="data-table">
+    <thead><tr><th scope="col">Producto</th><th scope="col" class="hidden sm:table-cell">Estado</th><th scope="col" class="num hidden sm:table-cell">Precio</th><th scope="col">Ajustar stock</th></tr></thead>
+    <tbody>
+      
+        <tr>
+          <td><a href="/panel/productos/121/" class="font-semibold hover:underline">Boss Bottled</a><span class="block text-xs text-ink-soft">Hugo Boss · Caballeros</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-danger">Agotado</span>
+            
+          </td>
+          <td class="num hidden sm:table-cell">$79.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/121/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-121" class="sr-only">Unidades de Hugo Boss Boss Bottled</label>
+              <input id="stock-121" type="number" name="stock" value="0" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/129/" class="font-semibold hover:underline">Candy</a><span class="block text-xs text-ink-soft">Prada · Damas</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-warn">Stock bajo</span>
+            
+          </td>
+          <td class="num hidden sm:table-cell">$118.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/129/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-129" class="sr-only">Unidades de Prada Candy</label>
+              <input id="stock-129" type="number" name="stock" value="2" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/124/" class="font-semibold hover:underline">Coco Noir</a><span class="block text-xs text-ink-soft">Chanel · Damas</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-warn">Stock bajo</span>
+            
+          </td>
+          <td class="num hidden sm:table-cell">$178.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/124/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-124" class="sr-only">Unidades de Chanel Coco Noir</label>
+              <input id="stock-124" type="number" name="stock" value="3" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/119/" class="font-semibold hover:underline">The One for Men</a><span class="block text-xs text-ink-soft">Dolce &amp; Gabbana · Caballeros</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-warn">Stock bajo</span>
+            
+          </td>
+          <td class="num hidden sm:table-cell">$105.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/119/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-119" class="sr-only">Unidades de Dolce &amp; Gabbana The One for Men</label>
+              <input id="stock-119" type="number" name="stock" value="4" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/137/" class="font-semibold hover:underline">Agua de Fresa y Flor</a><span class="block text-xs text-ink-soft">Petit Atelier · Niños</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-warn">Stock bajo</span>
+            
+          </td>
+          <td class="num hidden sm:table-cell">$26.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/137/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-137" class="sr-only">Unidades de Petit Atelier Agua de Fresa y Flor</label>
+              <input id="stock-137" type="number" name="stock" value="4" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/132/" class="font-semibold hover:underline">Narciso</a><span class="block text-xs text-ink-soft">Narciso Rodriguez · Damas</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-warn">Stock bajo</span>
+            
+          </td>
+          <td class="num hidden sm:table-cell">$132.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/132/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-132" class="sr-only">Unidades de Narciso Rodriguez Narciso</label>
+              <input id="stock-132" type="number" name="stock" value="5" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/128/" class="font-semibold hover:underline">Miu Miu</a><span class="block text-xs text-ink-soft">Miu Miu · Damas</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$96.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/128/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-128" class="sr-only">Unidades de Miu Miu Miu Miu</label>
+              <input id="stock-128" type="number" name="stock" value="6" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/125/" class="font-semibold hover:underline">Gabrielle</a><span class="block text-xs text-ink-soft">Chanel · Damas</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$160.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/125/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-125" class="sr-only">Unidades de Chanel Gabrielle</label>
+              <input id="stock-125" type="number" name="stock" value="7" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/122/" class="font-semibold hover:underline">N°5</a><span class="block text-xs text-ink-soft">Chanel · Damas</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$185.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/122/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-122" class="sr-only">Unidades de Chanel N°5</label>
+              <input id="stock-122" type="number" name="stock" value="8" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/134/" class="font-semibold hover:underline">Especially Escada</a><span class="block text-xs text-ink-soft">Escada · Damas</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$85.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/134/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-134" class="sr-only">Unidades de Escada Especially Escada</label>
+              <input id="stock-134" type="number" name="stock" value="9" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/118/" class="font-semibold hover:underline">Acqua di Giò</a><span class="block text-xs text-ink-soft">Giorgio Armani · Caballeros</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$112.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/118/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-118" class="sr-only">Unidades de Giorgio Armani Acqua di Giò</label>
+              <input id="stock-118" type="number" name="stock" value="9" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/131/" class="font-semibold hover:underline">The One</a><span class="block text-xs text-ink-soft">Dolce &amp; Gabbana · Damas</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$119.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/131/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-131" class="sr-only">Unidades de Dolce &amp; Gabbana The One</label>
+              <input id="stock-131" type="number" name="stock" value="10" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/120/" class="font-semibold hover:underline">Luna Rossa Carbon</a><span class="block text-xs text-ink-soft">Prada · Caballeros</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$120.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/120/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-120" class="sr-only">Unidades de Prada Luna Rossa Carbon</label>
+              <input id="stock-120" type="number" name="stock" value="11" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/123/" class="font-semibold hover:underline">Coco Mademoiselle</a><span class="block text-xs text-ink-soft">Chanel · Damas</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$172.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/123/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-123" class="sr-only">Unidades de Chanel Coco Mademoiselle</label>
+              <input id="stock-123" type="number" name="stock" value="12" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/138/" class="font-semibold hover:underline">Colonia Cítrica Menta</a><span class="block text-xs text-ink-soft">Petit Atelier · Niños</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$22.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/138/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-138" class="sr-only">Unidades de Petit Atelier Colonia Cítrica Menta</label>
+              <input id="stock-138" type="number" name="stock" value="12" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/130/" class="font-semibold hover:underline">Aqua Allegoria Mandarine Basilic</a><span class="block text-xs text-ink-soft">Guerlain · Damas</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$89.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/130/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-130" class="sr-only">Unidades de Guerlain Aqua Allegoria Mandarine Basilic</label>
+              <input id="stock-130" type="number" name="stock" value="13" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/116/" class="font-semibold hover:underline">Bleu de Chanel</a><span class="block text-xs text-ink-soft">Chanel · Caballeros</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$165.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/116/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-116" class="sr-only">Unidades de Chanel Bleu de Chanel</label>
+              <input id="stock-116" type="number" name="stock" value="14" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/136/" class="font-semibold hover:underline">Bruma Algodón y Pera</a><span class="block text-xs text-ink-soft">Petit Atelier · Niños</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$19.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/136/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-136" class="sr-only">Unidades de Petit Atelier Bruma Algodón y Pera</label>
+              <input id="stock-136" type="number" name="stock" value="15" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/126/" class="font-semibold hover:underline">Black Opium</a><span class="block text-xs text-ink-soft">Yves Saint Laurent · Damas</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$138.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/126/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-126" class="sr-only">Unidades de Yves Saint Laurent Black Opium</label>
+              <input id="stock-126" type="number" name="stock" value="16" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/127/" class="font-semibold hover:underline">La Vie Est Belle</a><span class="block text-xs text-ink-soft">Lancôme · Damas</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$129.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/127/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-127" class="sr-only">Unidades de Lancôme La Vie Est Belle</label>
+              <input id="stock-127" type="number" name="stock" value="18" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/135/" class="font-semibold hover:underline">Colonia Lavanda Suave</a><span class="block text-xs text-ink-soft">Petit Atelier · Niños</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$24.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/135/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-135" class="sr-only">Unidades de Petit Atelier Colonia Lavanda Suave</label>
+              <input id="stock-135" type="number" name="stock" value="20" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/117/" class="font-semibold hover:underline">Eros</a><span class="block text-xs text-ink-soft">Versace · Caballeros</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$98.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/117/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-117" class="sr-only">Unidades de Versace Eros</label>
+              <input id="stock-117" type="number" name="stock" value="22" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><a href="/panel/productos/133/" class="font-semibold hover:underline">Queen of Seduction</a><span class="block text-xs text-ink-soft">Antonio Banderas · Damas</span></td>
+          <td class="hidden sm:table-cell">
+            <span class="badge tone-success">Disponible</span>
+          </td>
+          <td class="num hidden sm:table-cell">$34.00</td>
+          <td>
+            <form method="post" action="/panel/inventario/133/" class="flex items-center gap-2">
+              <input type="hidden" name="csrfmiddlewaretoken" value="O2MA9ZpwXvESD7OTlj98j87poZS7n7CMc7gOQuZpRHHUAaOJvHbR8MTNgUcFIjNx">
+              <input type="hidden" name="back" value="">
+              <label for="stock-133" class="sr-only">Unidades de Antonio Banderas Queen of Seduction</label>
+              <input id="stock-133" type="number" name="stock" value="25" min="0" max="9999" inputmode="numeric" class="input h-9 w-24 text-right">
+              <button type="submit" class="btn btn-secondary btn-sm">Guardar</button>
+            </form>
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+</div>
+  </div>
+</div>
+
+  </main>
+
+  
+  <div class="pointer-events-none fixed inset-x-4 bottom-4 z-50 flex flex-col items-end gap-2 sm:inset-x-auto sm:right-6 sm:bottom-6" data-toasts role="status" aria-live="polite">
+  
+</div>
+<template id="toast-template">
+  <div class="toast" data-toast>
+    <i class="ph ph-check-circle mt-0.5 text-xl text-success" aria-hidden="true" data-toast-icon></i>
+    <p class="flex-1" data-toast-text></p>
+    <button type="button" class="-m-1 grid size-8 shrink-0 place-items-center rounded-sm text-ink-soft hover:bg-sage hover:text-ink" data-toast-close aria-label="Cerrar aviso"><i class="ph ph-x" aria-hidden="true"></i></button>
+  </div>
+</template>
+
+  <script src="/static/js/app.js" defer></script>
+  
+</body>
+</html>

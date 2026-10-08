@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Django
+*.log
+db.sqlite3
+
+# Variables y secretos
+.env
+.env.*
+!.env.example
+
+# Node / Remotion
+node_modules/
+video-demo/node_modules/
+
+# Builds / renders
+video-demo/out/
+video-demo/dist/
+video-demo/build/
+
+# Playwright temporal
+.playwright-output/
+
+# Cachés
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db

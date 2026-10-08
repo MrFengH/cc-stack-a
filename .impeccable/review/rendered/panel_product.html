@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editar Colonia Cítrica Menta · Panel · Nota Alta</title>
+  <meta name="description" content="Perfumes originales de Chanel, Versace, Lancôme y más. Envío en Ciudad de Panamá e interior, pago con tarjeta, Yappy o ACH.">
+  <meta name="theme-color" content="#23463c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/regular/style.css">
+  <link rel="stylesheet" href="app.css">
+  
+</head>
+<body class="min-h-dvh bg-ground">
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+  
+<aside class="fixed inset-y-0 left-0 z-30 hidden w-60 flex-col border-r border-line bg-surface lg:flex" aria-label="Panel">
+  <div class="flex h-16 shrink-0 items-center border-b border-line px-5">
+  <a href="/panel/" class="text-lg font-semibold tracking-[-0.03em]">Nota Alta <span class="font-normal text-ink-soft">Panel</span></a>
+</div>
+<nav class="flex-1 overflow-y-auto px-3 py-4" aria-label="Secciones del panel">
+  <ul class="space-y-0.5 text-[15px]">
+    
+      <li>
+        <a href="/panel/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-squares-four text-lg" aria-hidden="true"></i>Resumen
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/pedidos/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-receipt text-lg" aria-hidden="true"></i>Pedidos
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/clientes/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-users text-lg" aria-hidden="true"></i>Clientes
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/productos/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors bg-pine-tint font-semibold text-pine" aria-current="page">
+          <i class="ph ph-flask text-lg" aria-hidden="true"></i>Productos
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/inventario/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-stack text-lg" aria-hidden="true"></i>Inventario
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/marcas/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-bookmark-simple text-lg" aria-hidden="true"></i>Marcas
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+<div class="border-t border-line p-4 text-sm">
+  <a href="/" class="flex h-9 items-center gap-2 text-ink-soft hover:text-ink"><i class="ph ph-arrow-square-out" aria-hidden="true"></i>Ver tienda</a>
+  <a href="/admin/" class="flex h-9 items-center gap-2 text-ink-soft hover:text-ink"><i class="ph ph-gear-six" aria-hidden="true"></i>Admin de Django</a>
+  <p class="mt-2 truncate text-xs text-ink-soft" title="admin@notaalta.example">admin@notaalta.example</p>
+</div>
+
+</aside>
+<header class="sticky top-0 z-20 flex h-14 items-center gap-2 border-b border-line bg-surface px-4 lg:hidden">
+  <button type="button" class="btn-icon -ml-2" data-dialog-open="dash-menu" aria-label="Abrir menú del panel" aria-haspopup="dialog"><i class="ph ph-list text-2xl" aria-hidden="true"></i></button>
+  <span class="font-semibold tracking-[-0.03em]">Nota Alta · Panel</span>
+</header>
+<dialog id="dash-menu" class="sheet sheet-left bg-surface" aria-label="Menú del panel">
+  <button type="button" class="btn-icon absolute top-3 right-3" data-dialog-close aria-label="Cerrar menú"><i class="ph ph-x text-2xl" aria-hidden="true"></i></button>
+  <div class="flex h-16 shrink-0 items-center border-b border-line px-5">
+  <a href="/panel/" class="text-lg font-semibold tracking-[-0.03em]">Nota Alta <span class="font-normal text-ink-soft">Panel</span></a>
+</div>
+<nav class="flex-1 overflow-y-auto px-3 py-4" aria-label="Secciones del panel">
+  <ul class="space-y-0.5 text-[15px]">
+    
+      <li>
+        <a href="/panel/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-squares-four text-lg" aria-hidden="true"></i>Resumen
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/pedidos/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-receipt text-lg" aria-hidden="true"></i>Pedidos
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/clientes/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-users text-lg" aria-hidden="true"></i>Clientes
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/productos/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors bg-pine-tint font-semibold text-pine" aria-current="page">
+          <i class="ph ph-flask text-lg" aria-hidden="true"></i>Productos
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/inventario/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-stack text-lg" aria-hidden="true"></i>Inventario
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/marcas/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-bookmark-simple text-lg" aria-hidden="true"></i>Marcas
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+<div class="border-t border-line p-4 text-sm">
+  <a href="/" class="flex h-9 items-center gap-2 text-ink-soft hover:text-ink"><i class="ph ph-arrow-square-out" aria-hidden="true"></i>Ver tienda</a>
+  <a href="/admin/" class="flex h-9 items-center gap-2 text-ink-soft hover:text-ink"><i class="ph ph-gear-six" aria-hidden="true"></i>Admin de Django</a>
+  <p class="mt-2 truncate text-xs text-ink-soft" title="admin@notaalta.example">admin@notaalta.example</p>
+</div>
+
+</dialog>
+
+
+  <main id="contenido" class="flex-1" tabindex="-1">
+    
+<div class="lg:pl-60">
+  <div class="mx-auto max-w-[1400px] px-4 py-6 sm:px-6 lg:px-10 lg:py-8">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <a href="/panel/productos/" class="mb-1 inline-flex items-center gap-1 text-sm text-ink-soft hover:text-ink"><i class="ph ph-arrow-left" aria-hidden="true"></i>Productos</a>
+        <h1 class="text-2xl font-semibold sm:text-3xl">Petit Atelier Colonia Cítrica Menta</h1>
+        
+      </div>
+      <div class="flex flex-wrap gap-2"></div>
+    </div>
+    <div class="mt-6">
+<form method="post" enctype="multipart/form-data" class="grid gap-6 xl:grid-cols-3" novalidate>
+  <input type="hidden" name="csrfmiddlewaretoken" value="gmZVhX3DQ8uVZKU7T6ellnPje5ZBlaDJErt9YsDwKkxXWNUX3ug4a1BH60j9GmOu">
+  <div class="min-w-0 space-y-6 xl:col-span-2">
+    
+    <fieldset class="panel grid gap-5 p-5 sm:grid-cols-2">
+      <legend class="sr-only">Información básica</legend>
+      <h2 class="font-semibold sm:col-span-2">Información básica</h2>
+      
+<div class="">
+  <label for="id_name" class="label">
+    Nombre<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <input type="text" name="name" value="Colonia Cítrica Menta" maxlength="120" class="input" required id="id_name">
+  
+  
+</div>
+
+      
+<div class="">
+  <label for="id_slug" class="label">
+    Slug<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <input type="text" name="slug" value="petit-atelier-colonia-citrica-menta-100ml" maxlength="50" class="input" aria-describedby="id_slug_help" required id="id_slug">
+  <p id="id_slug_help" class="help">Parte final de la URL, sin espacios. Ej.: bleu-de-chanel-edp</p>
+  
+</div>
+
+      
+<div class="">
+  <label for="id_brand" class="label">
+    Marca<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <select name="brand" class="select" required id="id_brand">
+  <option value="">Selecciona una marca</option>
+
+  <option value="82">Antonio Banderas</option>
+
+  <option value="71">Chanel</option>
+
+  <option value="74">Dolce &amp; Gabbana</option>
+
+  <option value="83">Escada</option>
+
+  <option value="73">Giorgio Armani</option>
+
+  <option value="80">Guerlain</option>
+
+  <option value="76">Hugo Boss</option>
+
+  <option value="78">Lancôme</option>
+
+  <option value="79">Miu Miu</option>
+
+  <option value="81">Narciso Rodriguez</option>
+
+  <option value="84" selected>Petit Atelier</option>
+
+  <option value="75">Prada</option>
+
+  <option value="72">Versace</option>
+
+  <option value="77">Yves Saint Laurent</option>
+
+</select>
+  
+  
+</div>
+
+      
+<div class="">
+  <label for="id_category" class="label">
+    Categoría<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <select name="category" class="select" required id="id_category">
+  <option value="">Selecciona una categoría</option>
+
+  <option value="16">Caballeros</option>
+
+  <option value="17">Damas</option>
+
+  <option value="18" selected>Niños</option>
+
+</select>
+  
+  
+</div>
+
+      
+<div class="">
+  <label for="id_family" class="label">
+    Familia olfativa<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <select name="family" class="select" required id="id_family">
+  <option value="">Selecciona una familia</option>
+
+  <option value="floral">Floral</option>
+
+  <option value="citrica" selected>Cítrica</option>
+
+  <option value="amaderada">Amaderada</option>
+
+  <option value="oriental">Oriental</option>
+
+  <option value="gourmand">Gourmand</option>
+
+  <option value="aromatica">Aromática</option>
+
+  <option value="acuatica">Acuática</option>
+
+  <option value="chipre">Chipre</option>
+
+</select>
+  
+  
+</div>
+
+      
+<div class="">
+  <label for="id_concentration" class="label">
+    Concentración<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <select name="concentration" class="select" required id="id_concentration">
+  <option value="">Selecciona la concentración</option>
+
+  <option value="parfum">Parfum</option>
+
+  <option value="edp">Eau de Parfum</option>
+
+  <option value="edt">Eau de Toilette</option>
+
+  <option value="edc" selected>Eau de Cologne</option>
+
+  <option value="mist">Bruma corporal</option>
+
+</select>
+  
+  
+</div>
+
+      
+<div class="">
+  <label for="id_volume_ml" class="label">
+    Volumen (ml)<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <input type="number" name="volume_ml" value="100" min="0" class="input" required id="id_volume_ml">
+  
+  
+</div>
+
+      
+<div class="sm:col-span-2">
+  <label for="id_short_description" class="label">
+    Descripción corta<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <input type="text" name="short_description" value="Limón y menta para refrescar en días de calor y de escuela." maxlength="160" class="input" aria-describedby="id_short_description_help" required id="id_short_description">
+  <p id="id_short_description_help" class="help">Una línea que aparece en la tarjeta del catálogo (máx. 160 caracteres).</p>
+  
+</div>
+
+      
+<div class="sm:col-span-2">
+  <label for="id_description" class="label">
+    Descripción<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <textarea name="description" cols="40" rows="5" class="input min-h-32" required id="id_description">
+Colonia Cítrica Menta de Petit Atelier es un eau de cologne de la familia cítrica. Limón y menta para refrescar en días de calor y de escuela. Lo recomendamos para después del baño; aplícalo sobre la ropa. Al aplicarlo, empieza con limón, menta; tras unos minutos aparece un corazón de hoja de naranjo, y en la piel permanece un fondo de cedro suave.</textarea>
+  
+  
+</div>
+
+    </fieldset>
+    <fieldset class="panel grid gap-5 p-5 sm:grid-cols-3">
+      <legend class="sr-only">Notas olfativas</legend>
+      <h2 class="font-semibold sm:col-span-3">Notas olfativas</h2>
+      
+<div class="">
+  <label for="id_notes_top" class="label">
+    Notas de salida
+  </label>
+  <input type="text" name="notes_top" value="Limón, menta" maxlength="160" class="input" id="id_notes_top">
+  
+  
+</div>
+
+      
+<div class="">
+  <label for="id_notes_heart" class="label">
+    Notas de corazón
+  </label>
+  <input type="text" name="notes_heart" value="Hoja de naranjo" maxlength="160" class="input" id="id_notes_heart">
+  
+  
+</div>
+
+      
+<div class="">
+  <label for="id_notes_base" class="label">
+    Notas de fondo
+  </label>
+  <input type="text" name="notes_base" value="Cedro suave" maxlength="160" class="input" id="id_notes_base">
+  
+  
+</div>
+
+    </fieldset>
+  </div>
+
+  <div class="space-y-6">
+    <fieldset class="panel grid gap-5 p-5">
+      <legend class="sr-only">Precio e inventario</legend>
+      <h2 class="font-semibold">Precio e inventario</h2>
+      
+<div class="">
+  <label for="id_price" class="label">
+    Precio<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <input type="number" name="price" value="22.00" step="0.01" min="0" inputmode="decimal" class="input" required id="id_price">
+  
+  
+</div>
+
+      
+<div class="">
+  <label for="id_compare_at_price" class="label">
+    Precio anterior
+  </label>
+  <input type="number" name="compare_at_price" value="26.00" step="0.01" min="0" inputmode="decimal" class="input" aria-describedby="id_compare_at_price_help" id="id_compare_at_price">
+  <p id="id_compare_at_price_help" class="help">Déjalo vacío si el producto no tiene descuento.</p>
+  
+</div>
+
+      
+<div class="">
+  <label for="id_stock" class="label">
+    Inventario<span class="text-sale" aria-hidden="true"> *</span>
+  </label>
+  <input type="number" name="stock" value="12" min="0" class="input" required id="id_stock">
+  
+  
+</div>
+
+    </fieldset>
+    <fieldset class="panel grid gap-4 p-5">
+      <legend class="sr-only">Imagen y publicación</legend>
+      <h2 class="font-semibold">Imagen y publicación</h2>
+      <div class="photo-tile aspect-[4/5] w-32"><img src="/static/img/products/kids-citrica.webp" alt="Imagen actual de Petit Atelier Colonia Cítrica Menta" width="256" height="320"></div>
+      
+<div class="">
+  <label for="id_image" class="label">
+    Imagen
+  </label>
+  <input type="file" name="image" accept="image/*" class="file-input" aria-describedby="id_image_help" id="id_image">
+  <p id="id_image_help" class="help">JPG o WebP vertical (4:5), mínimo 800 × 1000 px.</p>
+  
+</div>
+
+      <label class="flex items-center gap-2.5"><input type="checkbox" name="is_active" class="checkbox" id="id_is_active" checked> Publicado en la tienda</label>
+      <label class="flex items-center gap-2.5"><input type="checkbox" name="is_featured" class="checkbox" id="id_is_featured"> Destacar en la página de inicio</label>
+    </fieldset>
+    <div class="flex gap-3">
+      <button type="submit" class="btn btn-primary flex-1">Guardar cambios</button>
+      <a href="/panel/productos/" class="btn btn-ghost">Cancelar</a>
+    </div>
+  </div>
+</form>
+</div>
+  </div>
+</div>
+
+  </main>
+
+  
+  <div class="pointer-events-none fixed inset-x-4 bottom-4 z-50 flex flex-col items-end gap-2 sm:inset-x-auto sm:right-6 sm:bottom-6" data-toasts role="status" aria-live="polite">
+  
+</div>
+<template id="toast-template">
+  <div class="toast" data-toast>
+    <i class="ph ph-check-circle mt-0.5 text-xl text-success" aria-hidden="true" data-toast-icon></i>
+    <p class="flex-1" data-toast-text></p>
+    <button type="button" class="-m-1 grid size-8 shrink-0 place-items-center rounded-sm text-ink-soft hover:bg-sage hover:text-ink" data-toast-close aria-label="Cerrar aviso"><i class="ph ph-x" aria-hidden="true"></i></button>
+  </div>
+</template>
+
+  <script src="/static/js/app.js" defer></script>
+  
+</body>
+</html>

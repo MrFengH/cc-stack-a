@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resumen · Panel · Nota Alta</title>
+  <meta name="description" content="Perfumes originales de Chanel, Versace, Lancôme y más. Envío en Ciudad de Panamá e interior, pago con tarjeta, Yappy o ACH.">
+  <meta name="theme-color" content="#23463c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/regular/style.css">
+  <link rel="stylesheet" href="app.css">
+  
+</head>
+<body class="min-h-dvh bg-ground">
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+  
+<aside class="fixed inset-y-0 left-0 z-30 hidden w-60 flex-col border-r border-line bg-surface lg:flex" aria-label="Panel">
+  <div class="flex h-16 shrink-0 items-center border-b border-line px-5">
+  <a href="/panel/" class="text-lg font-semibold tracking-[-0.03em]">Nota Alta <span class="font-normal text-ink-soft">Panel</span></a>
+</div>
+<nav class="flex-1 overflow-y-auto px-3 py-4" aria-label="Secciones del panel">
+  <ul class="space-y-0.5 text-[15px]">
+    
+      <li>
+        <a href="/panel/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors bg-pine-tint font-semibold text-pine" aria-current="page">
+          <i class="ph ph-squares-four text-lg" aria-hidden="true"></i>Resumen
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/pedidos/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-receipt text-lg" aria-hidden="true"></i>Pedidos
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/clientes/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-users text-lg" aria-hidden="true"></i>Clientes
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/productos/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-flask text-lg" aria-hidden="true"></i>Productos
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/inventario/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-stack text-lg" aria-hidden="true"></i>Inventario
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/marcas/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-bookmark-simple text-lg" aria-hidden="true"></i>Marcas
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+<div class="border-t border-line p-4 text-sm">
+  <a href="/" class="flex h-9 items-center gap-2 text-ink-soft hover:text-ink"><i class="ph ph-arrow-square-out" aria-hidden="true"></i>Ver tienda</a>
+  <a href="/admin/" class="flex h-9 items-center gap-2 text-ink-soft hover:text-ink"><i class="ph ph-gear-six" aria-hidden="true"></i>Admin de Django</a>
+  <p class="mt-2 truncate text-xs text-ink-soft" title="admin@notaalta.example">admin@notaalta.example</p>
+</div>
+
+</aside>
+<header class="sticky top-0 z-20 flex h-14 items-center gap-2 border-b border-line bg-surface px-4 lg:hidden">
+  <button type="button" class="btn-icon -ml-2" data-dialog-open="dash-menu" aria-label="Abrir menú del panel" aria-haspopup="dialog"><i class="ph ph-list text-2xl" aria-hidden="true"></i></button>
+  <span class="font-semibold tracking-[-0.03em]">Nota Alta · Panel</span>
+</header>
+<dialog id="dash-menu" class="sheet sheet-left bg-surface" aria-label="Menú del panel">
+  <button type="button" class="btn-icon absolute top-3 right-3" data-dialog-close aria-label="Cerrar menú"><i class="ph ph-x text-2xl" aria-hidden="true"></i></button>
+  <div class="flex h-16 shrink-0 items-center border-b border-line px-5">
+  <a href="/panel/" class="text-lg font-semibold tracking-[-0.03em]">Nota Alta <span class="font-normal text-ink-soft">Panel</span></a>
+</div>
+<nav class="flex-1 overflow-y-auto px-3 py-4" aria-label="Secciones del panel">
+  <ul class="space-y-0.5 text-[15px]">
+    
+      <li>
+        <a href="/panel/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors bg-pine-tint font-semibold text-pine" aria-current="page">
+          <i class="ph ph-squares-four text-lg" aria-hidden="true"></i>Resumen
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/pedidos/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-receipt text-lg" aria-hidden="true"></i>Pedidos
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/clientes/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-users text-lg" aria-hidden="true"></i>Clientes
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/productos/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-flask text-lg" aria-hidden="true"></i>Productos
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/inventario/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-stack text-lg" aria-hidden="true"></i>Inventario
+        </a>
+      </li>
+    
+      <li>
+        <a href="/panel/marcas/" class="flex h-10 items-center gap-3 rounded-sm px-3 transition-colors text-ink-soft hover:bg-ground hover:text-ink" >
+          <i class="ph ph-bookmark-simple text-lg" aria-hidden="true"></i>Marcas
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+<div class="border-t border-line p-4 text-sm">
+  <a href="/" class="flex h-9 items-center gap-2 text-ink-soft hover:text-ink"><i class="ph ph-arrow-square-out" aria-hidden="true"></i>Ver tienda</a>
+  <a href="/admin/" class="flex h-9 items-center gap-2 text-ink-soft hover:text-ink"><i class="ph ph-gear-six" aria-hidden="true"></i>Admin de Django</a>
+  <p class="mt-2 truncate text-xs text-ink-soft" title="admin@notaalta.example">admin@notaalta.example</p>
+</div>
+
+</dialog>
+
+
+  <main id="contenido" class="flex-1" tabindex="-1">
+    
+<div class="lg:pl-60">
+  <div class="mx-auto max-w-[1400px] px-4 py-6 sm:px-6 lg:px-10 lg:py-8">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        
+        <h1 class="text-2xl font-semibold sm:text-3xl">Resumen</h1>
+        <p class="mt-1 text-sm text-ink-soft">Datos al 6 de octubre, 19:04. Las ventas excluyen pedidos cancelados.</p>
+      </div>
+      <div class="flex flex-wrap gap-2"><a href="/panel/productos/nuevo/" class="btn btn-primary btn-sm"><i class="ph ph-plus" aria-hidden="true"></i>Nuevo producto</a></div>
+    </div>
+    <div class="mt-6">
+<dl class="grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-line bg-line xl:grid-cols-4">
+  <div class="bg-surface p-5"><dt class="text-sm text-ink-soft">Total vendido</dt><dd class="mt-1 text-2xl font-semibold sm:text-3xl">$10,560.50</dd></div>
+  <div class="bg-surface p-5"><dt class="text-sm text-ink-soft">Pedidos</dt><dd class="mt-1 text-2xl font-semibold sm:text-3xl">54</dd></div>
+  <div class="bg-surface p-5"><dt class="text-sm text-ink-soft">Ticket promedio</dt><dd class="mt-1 text-2xl font-semibold sm:text-3xl">$195.56</dd></div>
+  <div class="bg-surface p-5"><dt class="text-sm text-ink-soft">Clientes registrados</dt><dd class="mt-1 text-2xl font-semibold sm:text-3xl">13</dd></div>
+</dl>
+
+<div class="mt-4 grid gap-4 sm:grid-cols-3">
+  <a href="/panel/pedidos/?estado=pendiente" class="panel flex items-center gap-4 p-4 transition-colors hover:border-line-strong">
+    <span class="grid size-10 place-items-center rounded-sm bg-warn-tint text-warn"><i class="ph ph-hourglass-medium text-xl" aria-hidden="true"></i></span>
+    <span class="flex-1"><span class="block text-sm text-ink-soft">Pendientes de pago</span><span class="text-xl font-semibold">1</span></span>
+    <i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+  </a>
+  <a href="/panel/pedidos/?estado=pagado" class="panel flex items-center gap-4 p-4 transition-colors hover:border-line-strong">
+    <span class="grid size-10 place-items-center rounded-sm bg-info-tint text-info"><i class="ph ph-package text-xl" aria-hidden="true"></i></span>
+    <span class="flex-1"><span class="block text-sm text-ink-soft">Por preparar o en preparación</span><span class="text-xl font-semibold">4</span></span>
+    <i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+  </a>
+  <a href="/panel/inventario/" class="panel flex items-center gap-4 p-4 transition-colors hover:border-line-strong">
+    <span class="grid size-10 place-items-center rounded-sm bg-danger-tint text-danger"><i class="ph ph-warning text-xl" aria-hidden="true"></i></span>
+    <span class="flex-1"><span class="block text-sm text-ink-soft">Productos con stock bajo o agotados</span><span class="text-xl font-semibold">6</span></span>
+    <i class="ph ph-caret-right text-ink-soft" aria-hidden="true"></i>
+  </a>
+</div>
+
+<div class="mt-6 grid gap-6 xl:grid-cols-3">
+  <section class="panel min-w-0 p-5 xl:col-span-2" aria-labelledby="sales-title">
+    <div class="flex flex-wrap items-baseline justify-between gap-2">
+      <h2 id="sales-title" class="font-semibold">Ventas por día, últimos 30 días</h2>
+      <p class="text-sm text-ink-soft">
+        <span class="font-semibold text-ink">$7,897.30</span>
+         · <span class="text-success font-medium">+196,5%</span> frente a los 30 días anteriores
+      </p>
+    </div>
+    <figure class="mt-6">
+      <div class="relative h-48 border-b border-line-strong" aria-hidden="true">
+        <span class="absolute top-0 left-0 text-xs text-ink-soft">$994.10</span>
+        <span class="absolute inset-x-0 top-1/2 border-t border-dashed border-line"></span>
+        <div class="absolute inset-0 flex items-end gap-[3px] pt-5">
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 26.7%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">7 Sep: $265.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 45.2%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">8 Sep: $449.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 39.9%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">9 Sep: $397.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-line" style="height: 2px"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">10 Sep: $0.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-line" style="height: 2px"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">11 Sep: $0.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 2.4%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">12 Sep: $23.40</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 21.9%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">13 Sep: $217.80</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 63.2%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">14 Sep: $628.60</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-line" style="height: 2px"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">15 Sep: $0.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 42.1%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">16 Sep: $418.90</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 18.6%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">17 Sep: $185.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 3.1%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">18 Sep: $31.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-line" style="height: 2px"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">19 Sep: $0.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 4.8%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">20 Sep: $48.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 96.0%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">21 Sep: $954.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 34.0%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">22 Sep: $338.10</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 72.6%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">23 Sep: $722.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 29.5%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">24 Sep: $293.20</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 100.0%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">25 Sep: $994.10</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-line" style="height: 2px"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">26 Sep: $0.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-line" style="height: 2px"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">27 Sep: $0.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 12.0%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">28 Sep: $118.80</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 25.8%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">29 Sep: $256.50</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 41.0%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">30 Sep: $407.30</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 45.8%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">1 Oct: $455.10</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-line" style="height: 2px"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">2 Oct: $0.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 2.9%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">3 Oct: $28.50</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 33.6%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">4 Oct: $334.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-pine group-hover:bg-pine-deep" style="height: 33.4%"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">5 Oct: $332.00</span>
+            </div>
+          
+            <div class="group relative flex h-full flex-1 items-end">
+              <div class="w-full rounded-t-[2px] bg-line" style="height: 2px"></div>
+              <span class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 hidden -translate-x-1/2 rounded-sm bg-ink px-2 py-1 text-xs whitespace-nowrap text-surface group-hover:block">6 Oct: $0.00</span>
+            </div>
+          
+        </div>
+      </div>
+      <div class="mt-2 flex justify-between text-xs text-ink-soft" aria-hidden="true"><span>7 Sep</span><span>21 Sep</span><span>Hoy</span></div>
+      <figcaption class="sr-only">Gráfico de barras de ventas diarias. Tabla con los mismos datos a continuación.</figcaption>
+      <details class="mt-4 text-sm">
+        <summary class="text-ink-soft hover:text-ink">Ver datos en tabla</summary>
+        <div class="mt-2 max-h-64 overflow-y-auto">
+          <table class="data-table">
+            <thead><tr><th scope="col">Día</th><th scope="col" class="num">Ventas</th></tr></thead>
+            <tbody><tr><td>lunes 7 de septiembre</td><td class="num">$265.00</td></tr><tr><td>martes 8 de septiembre</td><td class="num">$449.00</td></tr><tr><td>miércoles 9 de septiembre</td><td class="num">$397.00</td></tr><tr><td>jueves 10 de septiembre</td><td class="num">$0.00</td></tr><tr><td>viernes 11 de septiembre</td><td class="num">$0.00</td></tr><tr><td>sábado 12 de septiembre</td><td class="num">$23.40</td></tr><tr><td>domingo 13 de septiembre</td><td class="num">$217.80</td></tr><tr><td>lunes 14 de septiembre</td><td class="num">$628.60</td></tr><tr><td>martes 15 de septiembre</td><td class="num">$0.00</td></tr><tr><td>miércoles 16 de septiembre</td><td class="num">$418.90</td></tr><tr><td>jueves 17 de septiembre</td><td class="num">$185.00</td></tr><tr><td>viernes 18 de septiembre</td><td class="num">$31.00</td></tr><tr><td>sábado 19 de septiembre</td><td class="num">$0.00</td></tr><tr><td>domingo 20 de septiembre</td><td class="num">$48.00</td></tr><tr><td>lunes 21 de septiembre</td><td class="num">$954.00</td></tr><tr><td>martes 22 de septiembre</td><td class="num">$338.10</td></tr><tr><td>miércoles 23 de septiembre</td><td class="num">$722.00</td></tr><tr><td>jueves 24 de septiembre</td><td class="num">$293.20</td></tr><tr><td>viernes 25 de septiembre</td><td class="num">$994.10</td></tr><tr><td>sábado 26 de septiembre</td><td class="num">$0.00</td></tr><tr><td>domingo 27 de septiembre</td><td class="num">$0.00</td></tr><tr><td>lunes 28 de septiembre</td><td class="num">$118.80</td></tr><tr><td>martes 29 de septiembre</td><td class="num">$256.50</td></tr><tr><td>miércoles 30 de septiembre</td><td class="num">$407.30</td></tr><tr><td>jueves 1 de octubre</td><td class="num">$455.10</td></tr><tr><td>viernes 2 de octubre</td><td class="num">$0.00</td></tr><tr><td>sábado 3 de octubre</td><td class="num">$28.50</td></tr><tr><td>domingo 4 de octubre</td><td class="num">$334.00</td></tr><tr><td>lunes 5 de octubre</td><td class="num">$332.00</td></tr><tr><td>martes 6 de octubre</td><td class="num">$0.00</td></tr></tbody>
+          </table>
+        </div>
+      </details>
+    </figure>
+  </section>
+
+  <section class="panel p-5" aria-labelledby="status-title">
+    <h2 id="status-title" class="font-semibold">Pedidos por estado</h2>
+    <ul class="mt-4 space-y-1">
+      
+        <li>
+          <a href="/panel/pedidos/?estado=pendiente" class="flex h-10 items-center justify-between gap-3 rounded-sm px-2 hover:bg-ground">
+            <span class="badge tone-warn">Pendiente de pago</span>
+            <span class="font-semibold">1</span>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/panel/pedidos/?estado=pagado" class="flex h-10 items-center justify-between gap-3 rounded-sm px-2 hover:bg-ground">
+            <span class="badge tone-info">Pagado</span>
+            <span class="font-semibold">3</span>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/panel/pedidos/?estado=preparando" class="flex h-10 items-center justify-between gap-3 rounded-sm px-2 hover:bg-ground">
+            <span class="badge tone-info">En preparación</span>
+            <span class="font-semibold">1</span>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/panel/pedidos/?estado=enviado" class="flex h-10 items-center justify-between gap-3 rounded-sm px-2 hover:bg-ground">
+            <span class="badge tone-brand">Enviado</span>
+            <span class="font-semibold">1</span>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/panel/pedidos/?estado=entregado" class="flex h-10 items-center justify-between gap-3 rounded-sm px-2 hover:bg-ground">
+            <span class="badge tone-success">Entregado</span>
+            <span class="font-semibold">48</span>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/panel/pedidos/?estado=cancelado" class="flex h-10 items-center justify-between gap-3 rounded-sm px-2 hover:bg-ground">
+            <span class="badge tone-danger">Cancelado</span>
+            <span class="font-semibold">8</span>
+          </a>
+        </li>
+      
+    </ul>
+  </section>
+</div>
+
+<div class="mt-6 grid items-start gap-6 xl:grid-cols-3">
+  <section class="panel min-w-0 overflow-hidden xl:col-span-2" aria-labelledby="recent-title">
+    <div class="flex items-center justify-between px-5 pt-5 pb-3">
+      <h2 id="recent-title" class="font-semibold">Pedidos recientes</h2>
+      <a href="/panel/pedidos/" class="link text-sm">Ver todos</a>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="data-table">
+        <thead><tr><th scope="col">Pedido</th><th scope="col">Cliente</th><th scope="col" class="hidden sm:table-cell">Fecha</th><th scope="col">Estado</th><th scope="col" class="num">Total</th></tr></thead>
+        <tbody>
+          
+            <tr>
+              <td><a href="/panel/pedidos/339/" class="font-semibold whitespace-nowrap hover:underline">NA-00339</a></td>
+              <td class="max-w-48 truncate">Mariela Ríos</td>
+              <td class="hidden sm:table-cell whitespace-nowrap text-ink-soft">5 Oct, 14:00</td>
+              <td><span class="badge tone-warn">Pendiente de pago</span></td>
+              <td class="num font-medium">$243.00</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/panel/pedidos/345/" class="font-semibold whitespace-nowrap hover:underline">NA-00345</a></td>
+              <td class="max-w-48 truncate">Edwin Quintero</td>
+              <td class="hidden sm:table-cell whitespace-nowrap text-ink-soft">5 Oct, 03:08</td>
+              <td><span class="badge tone-info">Pagado</span></td>
+              <td class="num font-medium">$89.00</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/panel/pedidos/334/" class="font-semibold whitespace-nowrap hover:underline">NA-00334</a></td>
+              <td class="max-w-48 truncate">Edwin Quintero</td>
+              <td class="hidden sm:table-cell whitespace-nowrap text-ink-soft">4 Oct, 20:28</td>
+              <td><span class="badge tone-info">Pagado</span></td>
+              <td class="num font-medium">$24.00</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/panel/pedidos/349/" class="font-semibold whitespace-nowrap hover:underline">NA-00349</a></td>
+              <td class="max-w-48 truncate">Marisol De León</td>
+              <td class="hidden sm:table-cell whitespace-nowrap text-ink-soft">4 Oct, 16:11</td>
+              <td><span class="badge tone-info">Pagado</span></td>
+              <td class="num font-medium">$310.00</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/panel/pedidos/348/" class="font-semibold whitespace-nowrap hover:underline">NA-00348</a></td>
+              <td class="max-w-48 truncate">Mariela Ríos</td>
+              <td class="hidden sm:table-cell whitespace-nowrap text-ink-soft">3 Oct, 21:12</td>
+              <td><span class="badge tone-info">En preparación</span></td>
+              <td class="num font-medium">$28.50</td>
+            </tr>
+          
+            <tr>
+              <td><a href="/panel/pedidos/321/" class="font-semibold whitespace-nowrap hover:underline">NA-00321</a></td>
+              <td class="max-w-48 truncate">Mariela Ríos</td>
+              <td class="hidden sm:table-cell whitespace-nowrap text-ink-soft">1 Oct, 19:28</td>
+              <td><span class="badge tone-success">Entregado</span></td>
+              <td class="num font-medium">$350.10</td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="space-y-6">
+    <section class="panel p-5" aria-labelledby="top-title">
+      <h2 id="top-title" class="font-semibold">Más vendidos</h2>
+      <ol class="mt-3 divide-y divide-line text-sm">
+        
+          <li class="flex items-baseline gap-3 py-2.5"><span class="w-4 text-ink-soft">1</span><span class="min-w-0 flex-1 truncate">Giorgio Armani Acqua di Giò</span><span class=" text-ink-soft">12 u.</span></li>
+        
+          <li class="flex items-baseline gap-3 py-2.5"><span class="w-4 text-ink-soft">2</span><span class="min-w-0 flex-1 truncate">Petit Atelier Agua de Fresa y Flor</span><span class=" text-ink-soft">8 u.</span></li>
+        
+          <li class="flex items-baseline gap-3 py-2.5"><span class="w-4 text-ink-soft">3</span><span class="min-w-0 flex-1 truncate">Dolce &amp; Gabbana The One</span><span class=" text-ink-soft">7 u.</span></li>
+        
+          <li class="flex items-baseline gap-3 py-2.5"><span class="w-4 text-ink-soft">4</span><span class="min-w-0 flex-1 truncate">Prada Luna Rossa Carbon</span><span class=" text-ink-soft">6 u.</span></li>
+        
+          <li class="flex items-baseline gap-3 py-2.5"><span class="w-4 text-ink-soft">5</span><span class="min-w-0 flex-1 truncate">Prada Candy</span><span class=" text-ink-soft">6 u.</span></li>
+        
+      </ol>
+    </section>
+    <section class="panel p-5" aria-labelledby="low-title">
+      <div class="flex items-center justify-between"><h2 id="low-title" class="font-semibold">Stock bajo</h2><a href="/panel/inventario/" class="link text-sm">Inventario</a></div>
+      <ul class="mt-3 divide-y divide-line text-sm">
+        
+          <li class="flex items-center gap-3 py-2.5"><span class="min-w-0 flex-1 truncate">Hugo Boss Boss Bottled</span>
+            <span class="badge tone-danger">Agotado</span></li>
+        
+          <li class="flex items-center gap-3 py-2.5"><span class="min-w-0 flex-1 truncate">Prada Candy</span>
+            <span class="badge tone-warn">2 u.</span></li>
+        
+          <li class="flex items-center gap-3 py-2.5"><span class="min-w-0 flex-1 truncate">Chanel Coco Noir</span>
+            <span class="badge tone-warn">3 u.</span></li>
+        
+          <li class="flex items-center gap-3 py-2.5"><span class="min-w-0 flex-1 truncate">Dolce &amp; Gabbana The One for Men</span>
+            <span class="badge tone-warn">4 u.</span></li>
+        
+          <li class="flex items-center gap-3 py-2.5"><span class="min-w-0 flex-1 truncate">Petit Atelier Agua de Fresa y Flor</span>
+            <span class="badge tone-warn">4 u.</span></li>
+        
+          <li class="flex items-center gap-3 py-2.5"><span class="min-w-0 flex-1 truncate">Narciso Rodriguez Narciso</span>
+            <span class="badge tone-warn">5 u.</span></li>
+        
+      </ul>
+    </section>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+
+  </main>
+
+  
+  <div class="pointer-events-none fixed inset-x-4 bottom-4 z-50 flex flex-col items-end gap-2 sm:inset-x-auto sm:right-6 sm:bottom-6" data-toasts role="status" aria-live="polite">
+  
+</div>
+<template id="toast-template">
+  <div class="toast" data-toast>
+    <i class="ph ph-check-circle mt-0.5 text-xl text-success" aria-hidden="true" data-toast-icon></i>
+    <p class="flex-1" data-toast-text></p>
+    <button type="button" class="-m-1 grid size-8 shrink-0 place-items-center rounded-sm text-ink-soft hover:bg-sage hover:text-ink" data-toast-close aria-label="Cerrar aviso"><i class="ph ph-x" aria-hidden="true"></i></button>
+  </div>
+</template>
+
+  <script src="/static/js/app.js" defer></script>
+  
+</body>
+</html>
