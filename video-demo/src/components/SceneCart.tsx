@@ -1,27 +1,45 @@
 import React from "react";
-import {
-  Easing,
-  interpolate,
-  OffthreadVideo,
-  staticFile,
-  useCurrentFrame,
-} from "remotion";
-import { HeaderCallout, PillHighlight } from "./Overlays";
+import { Easing, interpolate, staticFile, useCurrentFrame, Video } from "remotion";
+import { PriceSavingsMotion, SectionKicker } from "./editorial/EditorialOverlays";
 
 export const SceneCart: React.FC = () => {
   const frame = useCurrentFrame();
 
-  // Smooth zoom towards the coupon and summary box on the right:
-  // Starts wide (1.0x) -> zooms in to summary box (1.18x) -> slight micro-hold -> stabilizes
-  const scale = interpolate(
-    frame,
-    [0, 60, 130, 170, 240],
-    [1.0, 1.18, 1.18, 1.15, 1.15],
-    {
-      easing: Easing.bezier(0.16, 1, 0.3, 1),
-      extrapolateRight: "clamp",
-    }
-  );
+  // Entrada: Lateral push desde Escena 04 (frames 0 a 16)
+  const enterX = interpolate(frame, [0, 16], [90, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+    easing: Easing.bezier(0.16, 1, 0.3, 1),
+  });
+
+  const enterOpacity = interpolate(frame, [0, 10], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+  // Salida: Push vertical hacia Checkout (frames 226 a 240)
+  const exitSlideY = interpolate(frame, [226, 240], [0, -90], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+    easing: Easing.bezier(0.4, 0, 0.2, 1),
+  });
+
+  const exitOpacity = interpolate(frame, [232, 240], [1, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+  // Movimiento de cámara:
+  // Punch-in hacia el bloque de cupón y resumen de precios
+  // Micro-hold / settle cuando se aplica el cupón (frame 120-135)
+  const isHold = frame >= 120 && frame <= 135;
+  const scale = isHold
+    ? 1.08
+    : interpolate(frame, [0, 115, 140, 240], [1.0, 1.08, 1.09, 1.06], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+        easing: Easing.bezier(0.2, 0.8, 0.2, 1),
+      });
 
   return (
     <div
@@ -31,51 +49,35 @@ export const SceneCart: React.FC = () => {
         position: "relative",
         overflow: "hidden",
         backgroundColor: "#0d0f12",
+        transform: `translate(${enterX}px, ${exitSlideY}px)`,
+        opacity: enterOpacity * exitOpacity,
       }}
     >
       <div
         style={{
           width: 1920,
           height: 1080,
-          transformOrigin: "78% 48%",
+          transformOrigin: "65% 45%",
           transform: `scale(${scale})`,
         }}
       >
-        <OffthreadVideo
+        <Video
           src={staticFile("recordings/05-carrito-cupon.webm")}
-          trimBefore={10}
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
       </div>
 
-      <HeaderCallout
-        category="Conversión Fluida"
+      {/* Rótulo Editorial (2s) */}
+      <SectionKicker
         title="Cupones en Tiempo Real"
-        subtitle="Validación inmediata de códigos y recálculo automático del total"
+        subtitle="Validación inmediata y recálculo automático del total"
         position="top-left"
         startFrame={8}
-        durationInFrames={200}
+        durationInFrames={60}
       />
 
-      {/* Typing indicator highlight */}
-      <PillHighlight
-        label="Aplicando cupón: DG10"
-        x={1220}
-        y={490}
-        startFrame={40}
-        durationInFrames={65}
-        accentColor="#38bdf8"
-      />
-
-      {/* Discount confirmed highlight (micro-hold moment) */}
-      <PillHighlight
-        label="Descuento aplicado: -$11.90 (10% extra)"
-        x={1160}
-        y={360}
-        startFrame={125}
-        durationInFrames={95}
-        accentColor="#4ade80"
-      />
+      {/* Motion Graphic Numérico de Ahorro Directo */}
+      <PriceSavingsMotion applyFrame={124} />
     </div>
   );
 };
