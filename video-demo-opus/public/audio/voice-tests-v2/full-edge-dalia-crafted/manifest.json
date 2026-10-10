@@ -1,0 +1,62 @@
+{
+  "tres-notas": {
+    "speechFrames": 86,
+    "leadFrames": 1.2
+  },
+  "salida": {
+    "speechFrames": 59,
+    "leadFrames": 1.2
+  },
+  "familia": {
+    "speechFrames": 24,
+    "leadFrames": 1.2
+  },
+  "marca": {
+    "speechFrames": 23,
+    "leadFrames": 1.2
+  },
+  "nota": {
+    "speechFrames": 41,
+    "leadFrames": 1.2
+  },
+  "corazon": {
+    "speechFrames": 69,
+    "leadFrames": 1.2
+  },
+  "piramide": {
+    "speechFrames": 32,
+    "leadFrames": 1.2
+  },
+  "precio": {
+    "speechFrames": 37,
+    "leadFrames": 1.2
+  },
+  "cupon": {
+    "speechFrames": 55,
+    "leadFrames": 1.2
+  },
+  "yappy": {
+    "speechFrames": 40,
+    "leadFrames": 1.2
+  },
+  "fondo": {
+    "speechFrames": 67,
+    "leadFrames": 1.2
+  },
+  "pedido": {
+    "speechFrames": 61,
+    "leadFrames": 1.2
+  },
+  "venta": {
+    "speechFrames": 57,
+    "leadFrames": 1.2
+  },
+  "firma": {
+    "speechFrames": 35,
+    "leadFrames": 1.2
+  },
+  "cierre": {
+    "speechFrames": 56,
+    "leadFrames": 1.2
+  }
+}

@@ -1,0 +1,77 @@
+{
+ "tres-notas": {
+  "speechFrames": 70,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ },
+ "salida": {
+  "speechFrames": 55,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ },
+ "familia": {
+  "speechFrames": 23,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ },
+ "marca": {
+  "speechFrames": 21,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ },
+ "nota": {
+  "speechFrames": 72,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ },
+ "corazon": {
+  "speechFrames": 59,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ },
+ "piramide": {
+  "speechFrames": 33,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ },
+ "precio": {
+  "speechFrames": 39,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ },
+ "cupon": {
+  "speechFrames": 48,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ },
+ "yappy": {
+  "speechFrames": 50,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ },
+ "fondo": {
+  "speechFrames": 64,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ },
+ "pedido": {
+  "speechFrames": 52,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ },
+ "venta": {
+  "speechFrames": 53,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ },
+ "firma": {
+  "speechFrames": 33,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ },
+ "cierre": {
+  "speechFrames": 52,
+  "leadFrames": 1.2,
+  "engine": "elevenlabs"
+ }
+}

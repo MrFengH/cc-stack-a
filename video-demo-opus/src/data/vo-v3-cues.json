@@ -1,0 +1,64 @@
+{
+  "_comment": "Narration v3 (ElevenLabs Sarah). Same scheme as v2: at = absolute start frame of the file (speech ~1 frame later), anchored (word onset measured in each file: speech-burst start after a pause, ASR timestamp for continuous phrases) so key words land on their picture beats. duck = depth of the music duck under that phrase (0..1), set from the measured bed level so voice sits ~9 dB over the music (v3: the brighter ElevenLabs voice cuts through at a lower ratio) (signature ~8 dB, the bell must still ring). gain = optional per-phrase voice trim.",
+  "tres-notas": {
+    "at": 17,
+    "duck": 0.1
+  },
+  "salida": {
+    "at": 146,
+    "duck": 0.14
+  },
+  "familia": {
+    "at": 295,
+    "duck": 0.29
+  },
+  "marca": {
+    "at": 361,
+    "duck": 0.14
+  },
+  "nota": {
+    "at": 413,
+    "duck": 0.24
+  },
+  "corazon": {
+    "at": 596,
+    "duck": 0.52
+  },
+  "piramide": {
+    "at": 765,
+    "duck": 0.52
+  },
+  "precio": {
+    "at": 803,
+    "duck": 0.54
+  },
+  "cupon": {
+    "at": 873,
+    "duck": 0.56
+  },
+  "yappy": {
+    "at": 1061,
+    "duck": 0.54
+  },
+  "fondo": {
+    "at": 1160,
+    "duck": 0.56
+  },
+  "pedido": {
+    "at": 1251,
+    "duck": 0.64
+  },
+  "venta": {
+    "at": 1355,
+    "duck": 0.58
+  },
+  "firma": {
+    "at": 1688,
+    "duck": 0.72,
+    "gain": 1.35
+  },
+  "cierre": {
+    "at": 1729,
+    "duck": 0.66
+  }
+}

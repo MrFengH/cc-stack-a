@@ -1,0 +1,25 @@
+{
+  "name": "nota-alta-video-opus",
+  "private": true,
+  "description": "Nota Alta — product film (Opus version), built with Remotion.",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render NotaAltaFilm out/nota-alta-opus.mp4",
+    "typecheck": "tsc --noEmit",
+    "music": "node scripts/music.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.534",
+    "@remotion/google-fonts": "4.0.534",
+    "@remotion/media": "4.0.534",
+    "@remotion/transitions": "4.0.534",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.534"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "playwright": "1.64.0",
+    "typescript": "5.8.3"
+  }
+}

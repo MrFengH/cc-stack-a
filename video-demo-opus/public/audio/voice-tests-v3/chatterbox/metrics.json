@@ -1,0 +1,321 @@
+[
+ {
+  "file": "E-s1__1-apertura.wav",
+  "asr": "Todo perfume se cuenta en tres notas.",
+  "wer": 0.0,
+  "word_prob": 0.901,
+  "speech_s": 2.53,
+  "syl_per_s": 4.75,
+  "pauses_s": [
+   0.3
+  ],
+  "f0_median_hz": 123.3,
+  "f0_range_st": 16.7,
+  "f0_std_st": 5.51,
+  "final_fall_st": 9.8,
+  "rolloff95_hz": 5941,
+  "dyn_db": 14.8,
+  "lufs": -18.9
+ },
+ {
+  "file": "E-s1__2-centro.wav",
+  "asr": "El corazón, elegir bien.",
+  "wer": 0.0,
+  "word_prob": 0.924,
+  "speech_s": 3.31,
+  "syl_per_s": 2.42,
+  "pauses_s": [
+   0.84,
+   0.43
+  ],
+  "f0_median_hz": 207.4,
+  "f0_range_st": 21.0,
+  "f0_std_st": 7.7,
+  "final_fall_st": -15.8,
+  "rolloff95_hz": 7600,
+  "dyn_db": 35.5,
+  "lufs": -19.9
+ },
+ {
+  "file": "E-s1__3-cierre.wav",
+  "asr": "nota alta, perfumería online en Panamá.",
+  "wer": 0.0,
+  "word_prob": 0.871,
+  "speech_s": 2.37,
+  "syl_per_s": 6.33,
+  "pauses_s": [
+   0.16
+  ],
+  "f0_median_hz": 146.6,
+  "f0_range_st": 13.6,
+  "f0_std_st": 5.23,
+  "final_fall_st": 1.2,
+  "rolloff95_hz": 4219,
+  "dyn_db": 23.8,
+  "lufs": -18.1
+ },
+ {
+  "file": "E-s2__1-apertura.wav",
+  "asr": "Todo perfume se cuenta en tres notas. Menta en 3 notas.",
+  "wer": 0.57,
+  "word_prob": 0.816,
+  "speech_s": 2.98,
+  "syl_per_s": 4.03,
+  "pauses_s": [
+   0.25
+  ],
+  "f0_median_hz": 167.5,
+  "f0_range_st": 18.1,
+  "f0_std_st": 5.54,
+  "final_fall_st": -1.6,
+  "rolloff95_hz": 5719,
+  "dyn_db": 18.4,
+  "lufs": -16.9
+ },
+ {
+  "file": "E-s2__2-centro.wav",
+  "asr": "El corazón elegir bien.",
+  "wer": 0.0,
+  "word_prob": 0.873,
+  "speech_s": 3.27,
+  "syl_per_s": 2.45,
+  "pauses_s": [
+   0.75
+  ],
+  "f0_median_hz": 109.5,
+  "f0_range_st": 19.0,
+  "f0_std_st": 6.21,
+  "final_fall_st": 7.1,
+  "rolloff95_hz": 7852,
+  "dyn_db": 22.5,
+  "lufs": -19.2
+ },
+ {
+  "file": "E-s2__3-cierre.wav",
+  "asr": "¡Nota alta! Perfumería online en Panamá.",
+  "wer": 0.0,
+  "word_prob": 0.847,
+  "speech_s": 3.77,
+  "syl_per_s": 3.98,
+  "pauses_s": [
+   1.24
+  ],
+  "f0_median_hz": 144.1,
+  "f0_range_st": 11.3,
+  "f0_std_st": 3.4,
+  "final_fall_st": -1.2,
+  "rolloff95_hz": 5543,
+  "dyn_db": 21.7,
+  "lufs": -16.6
+ },
+ {
+  "file": "E-s3__1-apertura.wav",
+  "asr": "Todo perfume se cuenta en tres notas.",
+  "wer": 0.0,
+  "word_prob": 0.91,
+  "speech_s": 2.15,
+  "syl_per_s": 5.57,
+  "pauses_s": [
+   0.38
+  ],
+  "f0_median_hz": 123.3,
+  "f0_range_st": 11.0,
+  "f0_std_st": 3.7,
+  "final_fall_st": 5.1,
+  "rolloff95_hz": 6270,
+  "dyn_db": 12.2,
+  "lufs": -19.4
+ },
+ {
+  "file": "E-s3__2-centro.wav",
+  "asr": "El corazón elegir bien, elegir bien.",
+  "wer": 0.5,
+  "word_prob": 0.865,
+  "speech_s": 2.44,
+  "syl_per_s": 3.28,
+  "pauses_s": [
+   0.28
+  ],
+  "f0_median_hz": 156.2,
+  "f0_range_st": 19.1,
+  "f0_std_st": 6.21,
+  "final_fall_st": -2.5,
+  "rolloff95_hz": 5812,
+  "dyn_db": 12.4,
+  "lufs": -17.8
+ },
+ {
+  "file": "E-s3__3-cierre.wav",
+  "asr": "¡Nota alta! Perfumería online en Panamá.",
+  "wer": 0.0,
+  "word_prob": 0.831,
+  "speech_s": 3.67,
+  "syl_per_s": 4.09,
+  "pauses_s": [
+   0.18,
+   0.97
+  ],
+  "f0_median_hz": 129.1,
+  "f0_range_st": 19.8,
+  "f0_std_st": 6.49,
+  "final_fall_st": 11.7,
+  "rolloff95_hz": 5227,
+  "dyn_db": 24.3,
+  "lufs": -17.9
+ },
+ {
+  "file": "F-s1__1-apertura.wav",
+  "asr": "Todo perfume se cuenta en tres notas.",
+  "wer": 0.0,
+  "word_prob": 0.939,
+  "speech_s": 2.57,
+  "syl_per_s": 4.67,
+  "pauses_s": [],
+  "f0_median_hz": 184.7,
+  "f0_range_st": 15.5,
+  "f0_std_st": 4.77,
+  "final_fall_st": 10.0,
+  "rolloff95_hz": 6094,
+  "dyn_db": 15.4,
+  "lufs": -23.4
+ },
+ {
+  "file": "F-s1__2-centro.wav",
+  "asr": "El corazón elegir bien.",
+  "wer": 0.0,
+  "word_prob": 0.862,
+  "speech_s": 1.5,
+  "syl_per_s": 5.32,
+  "pauses_s": [],
+  "f0_median_hz": 143.3,
+  "f0_range_st": 6.5,
+  "f0_std_st": 2.03,
+  "final_fall_st": 2.4,
+  "rolloff95_hz": 4383,
+  "dyn_db": 12.2,
+  "lufs": -24.4
+ },
+ {
+  "file": "F-s1__3-cierre.wav",
+  "asr": "nota alta. Perfumería online en Panama.",
+  "wer": 0.0,
+  "word_prob": 0.871,
+  "speech_s": 3.07,
+  "syl_per_s": 4.88,
+  "pauses_s": [
+   0.42
+  ],
+  "f0_median_hz": 160.8,
+  "f0_range_st": 11.3,
+  "f0_std_st": 3.59,
+  "final_fall_st": 0.5,
+  "rolloff95_hz": 4289,
+  "dyn_db": 17.3,
+  "lufs": -21.0
+ },
+ {
+  "file": "F-s2__1-apertura.wav",
+  "asr": "Todo perfume se cuenta en tres notas.",
+  "wer": 0.0,
+  "word_prob": 0.94,
+  "speech_s": 1.77,
+  "syl_per_s": 6.78,
+  "pauses_s": [],
+  "f0_median_hz": 170.4,
+  "f0_range_st": 12.1,
+  "f0_std_st": 3.88,
+  "final_fall_st": 9.7,
+  "rolloff95_hz": 4371,
+  "dyn_db": 14.7,
+  "lufs": -22.5
+ },
+ {
+  "file": "F-s2__2-centro.wav",
+  "asr": "El corazón elegir bien.",
+  "wer": 0.0,
+  "word_prob": 0.857,
+  "speech_s": 1.76,
+  "syl_per_s": 4.55,
+  "pauses_s": [
+   0.17
+  ],
+  "f0_median_hz": 149.6,
+  "f0_range_st": 12.0,
+  "f0_std_st": 3.42,
+  "final_fall_st": 3.1,
+  "rolloff95_hz": 4406,
+  "dyn_db": 12.5,
+  "lufs": -24.4
+ },
+ {
+  "file": "F-s2__3-cierre.wav",
+  "asr": "nota alta perfumería online en Panamá.",
+  "wer": 0.0,
+  "word_prob": 0.829,
+  "speech_s": 4.26,
+  "syl_per_s": 3.52,
+  "pauses_s": [
+   1.0
+  ],
+  "f0_median_hz": 150.0,
+  "f0_range_st": 8.8,
+  "f0_std_st": 2.7,
+  "final_fall_st": 4.6,
+  "rolloff95_hz": 4705,
+  "dyn_db": 13.9,
+  "lufs": -21.4
+ },
+ {
+  "file": "F-s3__1-apertura.wav",
+  "asr": "Todo perfume se cuenta en tres notas.",
+  "wer": 0.0,
+  "word_prob": 0.936,
+  "speech_s": 4.25,
+  "syl_per_s": 2.83,
+  "pauses_s": [
+   1.21,
+   0.34
+  ],
+  "f0_median_hz": 194.6,
+  "f0_range_st": 14.4,
+  "f0_std_st": 4.28,
+  "final_fall_st": -3.1,
+  "rolloff95_hz": 6732,
+  "dyn_db": 31.3,
+  "lufs": -23.0
+ },
+ {
+  "file": "F-s3__2-centro.wav",
+  "asr": "el corazón elegir bien.",
+  "wer": 0.0,
+  "word_prob": 0.828,
+  "speech_s": 1.81,
+  "syl_per_s": 4.41,
+  "pauses_s": [
+   0.18
+  ],
+  "f0_median_hz": 145.4,
+  "f0_range_st": 6.0,
+  "f0_std_st": 1.94,
+  "final_fall_st": 3.8,
+  "rolloff95_hz": 4482,
+  "dyn_db": 10.8,
+  "lufs": -23.9
+ },
+ {
+  "file": "F-s3__3-cierre.wav",
+  "asr": "nota alta, perfumería online en Panamá.",
+  "wer": 0.0,
+  "word_prob": 0.89,
+  "speech_s": 2.62,
+  "syl_per_s": 5.72,
+  "pauses_s": [],
+  "f0_median_hz": 159.0,
+  "f0_range_st": 10.0,
+  "f0_std_st": 3.17,
+  "final_fall_st": 4.6,
+  "rolloff95_hz": 4324,
+  "dyn_db": 12.2,
+  "lufs": -21.5
+ }
+]

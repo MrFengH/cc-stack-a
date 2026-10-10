@@ -1,0 +1,18 @@
+{
+  "_comment": "Narration v2. at = absolute start frame of the file (speech ~1 frame later), anchored so key words land on their picture beats. duck = depth of the music duck under that phrase (0..1), set from the measured bed level so voice sits ~10 dB over the music (signature ~8 dB, the bell must still ring). gain = optional per-phrase voice trim.",
+  "tres-notas": { "at": 17, "duck": 0.15 },
+  "salida": { "at": 145, "duck": 0.2 },
+  "familia": { "at": 295, "duck": 0.35 },
+  "marca": { "at": 361, "duck": 0.2 },
+  "nota": { "at": 414, "duck": 0.3 },
+  "corazon": { "at": 596, "duck": 0.58 },
+  "piramide": { "at": 765, "duck": 0.52 },
+  "precio": { "at": 803, "duck": 0.6 },
+  "cupon": { "at": 875, "duck": 0.56 },
+  "yappy": { "at": 1073, "duck": 0.6 },
+  "fondo": { "at": 1158, "duck": 0.62 },
+  "pedido": { "at": 1251, "duck": 0.64 },
+  "venta": { "at": 1355, "duck": 0.64 },
+  "firma": { "at": 1688, "duck": 0.72, "gain": 1.2 },
+  "cierre": { "at": 1727, "duck": 0.66 }
+}

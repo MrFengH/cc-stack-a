@@ -1,0 +1,337 @@
+{
+ "picks": {
+  "tres-notas": {
+   "seeds": [
+    2
+   ],
+   "heard": "todo perfume se cuenta en tres notas"
+  },
+  "salida": {
+   "seeds": [
+    2
+   ],
+   "heard": "la salida descubrir"
+  },
+  "familia": {
+   "seeds": [
+    3
+   ],
+   "heard": "por familia"
+  },
+  "marca": {
+   "seeds": [
+    3
+   ],
+   "heard": "por marca"
+  },
+  "nota": {
+   "seeds": [
+    2
+   ],
+   "heard": "o por una sola nota"
+  },
+  "corazon": {
+   "seeds": [
+    2
+   ],
+   "heard": "el corazon elegir bien"
+  },
+  "piramide": {
+   "seeds": [
+    1
+   ],
+   "heard": "su piramide"
+  },
+  "precio": {
+   "seeds": [
+    1
+   ],
+   "heard": "su precio real"
+  },
+  "cupon": {
+   "seeds": [
+    2
+   ],
+   "heard": "tu cupon aplicado"
+  },
+  "yappy": {
+   "seeds": [
+    1
+   ],
+   "heard": "y pagas con yapi"
+  },
+  "fondo": {
+   "seeds": [
+    2
+   ],
+   "heard": "y el fondo lo que queda"
+  },
+  "pedido": {
+   "seeds": [
+    1
+   ],
+   "heard": "cada pedido en camino"
+  },
+  "venta": {
+   "seeds": [
+    2
+   ],
+   "heard": "cada venta a la vista"
+  },
+  "firma": {
+   "seeds": [
+    1
+   ],
+   "heard": "nota alta"
+  },
+  "cierre": {
+   "seeds": [
+    1
+   ],
+   "heard": "perfumeria online en panama"
+  },
+  "familia+marca": {
+   "seeds": [
+    2
+   ],
+   "heard": "por familia | por marca"
+  },
+  "firma+cierre": {
+   "seeds": [
+    2
+   ],
+   "heard": "nota alta | perfumeria online en panama"
+  }
+ },
+ "takes": {
+  "tres-notas[0]": {
+   "text": "[curious] Todo perfume se cuenta en tres notas.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": 2.059
+    },
+    {
+     "seed": 2,
+     "score": 2.076
+    }
+   ]
+  },
+  "salida[0]": {
+   "text": "[excited] La salida: descubrir.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": 1.552
+    },
+    {
+     "seed": 2,
+     "score": 1.585
+    }
+   ]
+  },
+  "familia[0]": {
+   "text": "[curious] Por familia.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": null
+    },
+    {
+     "seed": 2,
+     "score": null
+    },
+    {
+     "seed": 3,
+     "score": 1.842
+    }
+   ]
+  },
+  "marca[0]": {
+   "text": "[curious] Por marca.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": null
+    },
+    {
+     "seed": 2,
+     "score": null
+    },
+    {
+     "seed": 3,
+     "score": 1.36
+    }
+   ]
+  },
+  "nota[0]": {
+   "text": "[curious] O por una sola… nota.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": null
+    },
+    {
+     "seed": 2,
+     "score": 1.712
+    }
+   ]
+  },
+  "corazon[0]": {
+   "text": "[warmly] El corazón: elegir bien.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": 1.82
+    },
+    {
+     "seed": 2,
+     "score": 1.861
+    }
+   ]
+  },
+  "piramide[0]": {
+   "text": "[warmly] Su pirámide.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": 1.691
+    },
+    {
+     "seed": 2,
+     "score": null
+    }
+   ]
+  },
+  "precio[0]": {
+   "text": "[warmly] Su precio real.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": 1.373
+    },
+    {
+     "seed": 2,
+     "score": 1.219
+    }
+   ]
+  },
+  "cupon[0]": {
+   "text": "[cheerfully] Tu cupón, aplicado.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": 1.718
+    },
+    {
+     "seed": 2,
+     "score": 1.827
+    }
+   ]
+  },
+  "yappy[0]": {
+   "text": "[confident] Y pagas con Yappy.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": 2.196
+    },
+    {
+     "seed": 2,
+     "score": null
+    }
+   ]
+  },
+  "fondo[0]": {
+   "text": "[confident] Y el fondo: lo que queda.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": 1.957
+    },
+    {
+     "seed": 2,
+     "score": 1.96
+    }
+   ]
+  },
+  "pedido[0]": {
+   "text": "[confident] Cada pedido, en camino.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": 1.549
+    },
+    {
+     "seed": 2,
+     "score": 1.434
+    }
+   ]
+  },
+  "venta[0]": {
+   "text": "[confident] Cada venta, a la vista.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": 1.649
+    },
+    {
+     "seed": 2,
+     "score": 1.872
+    }
+   ]
+  },
+  "firma[0]": {
+   "text": "[confident] Nota Alta.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": 2.0
+    },
+    {
+     "seed": 2,
+     "score": 1.85
+    }
+   ]
+  },
+  "cierre[0]": {
+   "text": "[warmly] Perfumería online en Panamá.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": 1.402
+    },
+    {
+     "seed": 2,
+     "score": 1.166
+    }
+   ]
+  },
+  "familia+marca[0]": {
+   "text": "[curious] Por familia. Por marca.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": null
+    },
+    {
+     "seed": 2,
+     "score": 1.885
+    }
+   ]
+  },
+  "firma+cierre[0]": {
+   "text": "[confident] Nota Alta. [warmly] Perfumería online en Panamá.",
+   "takes": [
+    {
+     "seed": 1,
+     "score": null
+    },
+    {
+     "seed": 2,
+     "score": 1.971
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "tres-notas": {
+  "speechFrames": 86,
+  "leadFrames": 1.2
+ },
+ "salida": {
+  "speechFrames": 59,
+  "leadFrames": 1.2
+ },
+ "familia": {
+  "speechFrames": 24,
+  "leadFrames": 1.2
+ },
+ "marca": {
+  "speechFrames": 23,
+  "leadFrames": 1.2
+ },
+ "nota": {
+  "speechFrames": 87,
+  "leadFrames": 1.2,
+  "engine": "chatterbox"
+ },
+ "corazon": {
+  "speechFrames": 60,
+  "leadFrames": 1.2,
+  "engine": "chatterbox"
+ },
+ "piramide": {
+  "speechFrames": 25,
+  "leadFrames": 1.2,
+  "engine": "chatterbox"
+ },
+ "precio": {
+  "speechFrames": 27,
+  "leadFrames": 1.2,
+  "engine": "chatterbox"
+ },
+ "cupon": {
+  "speechFrames": 45,
+  "leadFrames": 1.2,
+  "engine": "chatterbox"
+ },
+ "yappy": {
+  "speechFrames": 48,
+  "leadFrames": 1.2,
+  "engine": "chatterbox"
+ },
+ "fondo": {
+  "speechFrames": 54,
+  "leadFrames": 1.2,
+  "engine": "chatterbox"
+ },
+ "pedido": {
+  "speechFrames": 55,
+  "leadFrames": 1.2,
+  "engine": "chatterbox"
+ },
+ "venta": {
+  "speechFrames": 56,
+  "leadFrames": 1.2,
+  "engine": "chatterbox"
+ },
+ "firma": {
+  "speechFrames": 24,
+  "leadFrames": 1.2,
+  "engine": "chatterbox"
+ },
+ "cierre": {
+  "speechFrames": 56,
+  "leadFrames": 1.2,
+  "engine": "chatterbox"
+ }
+}

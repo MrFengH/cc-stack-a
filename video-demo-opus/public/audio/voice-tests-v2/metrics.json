@@ -1,0 +1,445 @@
+[
+ {
+  "file": "chatterbox-default__1-apertura.wav",
+  "asr": "todo el perfume se cuenta en tres notas. En todos, nota.",
+  "wer": 0.57,
+  "word_prob": 0.822,
+  "speech_s": 2.97,
+  "syl_per_s": 4.04,
+  "pauses_s": [
+   0.39
+  ],
+  "f0_median_hz": 159.9,
+  "f0_range_st": 15.2,
+  "f0_std_st": 5.19,
+  "final_fall_st": 9.1,
+  "rolloff95_hz": 6012,
+  "lufs": -17.5
+ },
+ {
+  "file": "chatterbox-default__2-centro.wav",
+  "asr": "El corazón elegir bien.",
+  "wer": 0.0,
+  "word_prob": 0.83,
+  "speech_s": 3.46,
+  "syl_per_s": 2.31,
+  "pauses_s": [
+   0.49
+  ],
+  "f0_median_hz": 71.2,
+  "f0_range_st": 19.7,
+  "f0_std_st": 6.51,
+  "final_fall_st": 6.1,
+  "rolloff95_hz": 8578,
+  "lufs": -19.8
+ },
+ {
+  "file": "chatterbox-default__3-cierre.wav",
+  "asr": "nota alta. Perfumería online en Panamá.",
+  "wer": 0.0,
+  "word_prob": 0.84,
+  "speech_s": 3.73,
+  "syl_per_s": 4.02,
+  "pauses_s": [
+   0.27,
+   1.17
+  ],
+  "f0_median_hz": 170.4,
+  "f0_range_st": 17.9,
+  "f0_std_st": 5.09,
+  "final_fall_st": 9.8,
+  "rolloff95_hz": 5285,
+  "lufs": -18.0
+ },
+ {
+  "file": "chatterbox-directed__1-apertura.wav",
+  "asr": "Todo perfume se cuenta en tres notas.",
+  "wer": 0.0,
+  "word_prob": 0.842,
+  "speech_s": 2.87,
+  "syl_per_s": 4.18,
+  "pauses_s": [
+   0.51
+  ],
+  "f0_median_hz": 179.0,
+  "f0_range_st": 14.6,
+  "f0_std_st": 4.47,
+  "final_fall_st": 1.1,
+  "rolloff95_hz": 5496,
+  "lufs": -17.2
+ },
+ {
+  "file": "chatterbox-directed__2-centro.wav",
+  "asr": "El corazón, elegir bien.",
+  "wer": 0.0,
+  "word_prob": 0.924,
+  "speech_s": 1.8,
+  "syl_per_s": 4.44,
+  "pauses_s": [
+   0.2
+  ],
+  "f0_median_hz": 119.8,
+  "f0_range_st": 13.9,
+  "f0_std_st": 5.22,
+  "final_fall_st": 0.5,
+  "rolloff95_hz": 5824,
+  "lufs": -19.7
+ },
+ {
+  "file": "chatterbox-directed__3-cierre.wav",
+  "asr": "nota alta, perfumería online en Panamá.",
+  "wer": 0.0,
+  "word_prob": 0.851,
+  "speech_s": 4.07,
+  "syl_per_s": 3.68,
+  "pauses_s": [
+   0.28,
+   0.42
+  ],
+  "f0_median_hz": 148.3,
+  "f0_range_st": 19.5,
+  "f0_std_st": 5.4,
+  "final_fall_st": 13.5,
+  "rolloff95_hz": 3844,
+  "lufs": -17.6
+ },
+ {
+  "file": "edge-dalia-crafted__1-apertura.wav",
+  "asr": "Todo perfume se cuenta en tres notas.",
+  "wer": 0.0,
+  "word_prob": 0.879,
+  "speech_s": 2.83,
+  "syl_per_s": 4.25,
+  "pauses_s": [
+   0.21
+  ],
+  "f0_median_hz": 223.5,
+  "f0_range_st": 8.9,
+  "f0_std_st": 2.77,
+  "final_fall_st": 4.4,
+  "rolloff95_hz": 8156,
+  "lufs": -20.1
+ },
+ {
+  "file": "edge-dalia-crafted__2-centro.wav",
+  "asr": "el corazón, elegir bien.",
+  "wer": 0.0,
+  "word_prob": 0.838,
+  "speech_s": 2.3,
+  "syl_per_s": 3.47,
+  "pauses_s": [
+   0.33
+  ],
+  "f0_median_hz": 189.0,
+  "f0_range_st": 7.7,
+  "f0_std_st": 2.22,
+  "final_fall_st": 2.5,
+  "rolloff95_hz": 7699,
+  "lufs": -19.5
+ },
+ {
+  "file": "edge-dalia-crafted__3-cierre.wav",
+  "asr": "Nota alta. Perfumería online en Panamá.",
+  "wer": 0.0,
+  "word_prob": 0.889,
+  "speech_s": 3.56,
+  "syl_per_s": 4.21,
+  "pauses_s": [
+   0.58
+  ],
+  "f0_median_hz": 193.5,
+  "f0_range_st": 8.4,
+  "f0_std_st": 2.24,
+  "final_fall_st": 2.2,
+  "rolloff95_hz": 7266,
+  "lufs": -18.6
+ },
+ {
+  "file": "edge-dalia-directed__1-apertura.mp3",
+  "asr": "Todo perfume se cuenta en tres notas.",
+  "wer": 0.0,
+  "word_prob": 0.911,
+  "speech_s": 2.41,
+  "syl_per_s": 4.98,
+  "pauses_s": [],
+  "f0_median_hz": 199.1,
+  "f0_range_st": 12.1,
+  "f0_std_st": 3.67,
+  "final_fall_st": 8.0,
+  "rolloff95_hz": 8068,
+  "lufs": -19.6
+ },
+ {
+  "file": "edge-dalia-directed__2-centro.mp3",
+  "asr": "El corazón superíndice 3N. Elegir bien.",
+  "wer": 0.5,
+  "word_prob": 0.664,
+  "speech_s": 3.34,
+  "syl_per_s": 2.4,
+  "pauses_s": [
+   0.28
+  ],
+  "f0_median_hz": 198.0,
+  "f0_range_st": 8.0,
+  "f0_std_st": 2.44,
+  "final_fall_st": 1.3,
+  "rolloff95_hz": 8203,
+  "lufs": -18.4
+ },
+ {
+  "file": "edge-dalia-directed__3-cierre.mp3",
+  "asr": "Nota alta. Perfumerá online en Panamá.",
+  "wer": 0.17,
+  "word_prob": 0.894,
+  "speech_s": 3.95,
+  "syl_per_s": 3.8,
+  "pauses_s": [
+   1.07
+  ],
+  "f0_median_hz": 199.1,
+  "f0_range_st": 8.5,
+  "f0_std_st": 2.22,
+  "final_fall_st": 2.6,
+  "rolloff95_hz": 7652,
+  "lufs": -18.3
+ },
+ {
+  "file": "edge-margarita-baseline__1-apertura.mp3",
+  "asr": "Todo perfume se cuenta en tres notas.",
+  "wer": 0.0,
+  "word_prob": 0.912,
+  "speech_s": 2.17,
+  "syl_per_s": 5.54,
+  "pauses_s": [],
+  "f0_median_hz": 226.1,
+  "f0_range_st": 12.2,
+  "f0_std_st": 3.57,
+  "final_fall_st": 5.2,
+  "rolloff95_hz": 8525,
+  "lufs": -19.7
+ },
+ {
+  "file": "edge-margarita-baseline__2-centro.mp3",
+  "asr": "El corazón superíndice 3n, elegir bien.",
+  "wer": 0.5,
+  "word_prob": 0.647,
+  "speech_s": 2.98,
+  "syl_per_s": 2.69,
+  "pauses_s": [
+   0.25
+  ],
+  "f0_median_hz": 226.1,
+  "f0_range_st": 8.7,
+  "f0_std_st": 2.61,
+  "final_fall_st": 1.2,
+  "rolloff95_hz": 8854,
+  "lufs": -18.3
+ },
+ {
+  "file": "edge-margarita-baseline__3-cierre.mp3",
+  "asr": "Nota alta. Perfumerá online en Panamá.",
+  "wer": 0.17,
+  "word_prob": 0.888,
+  "speech_s": 3.52,
+  "syl_per_s": 4.26,
+  "pauses_s": [
+   0.95
+  ],
+  "f0_median_hz": 225.5,
+  "f0_range_st": 8.1,
+  "f0_std_st": 2.17,
+  "final_fall_st": 2.4,
+  "rolloff95_hz": 8285,
+  "lufs": -18.4
+ },
+ {
+  "file": "edge-margarita-crafted__1-apertura.wav",
+  "asr": "Todo perfume, se cuenta en tres notas.",
+  "wer": 0.0,
+  "word_prob": 0.908,
+  "speech_s": 2.7,
+  "syl_per_s": 4.45,
+  "pauses_s": [
+   0.2
+  ],
+  "f0_median_hz": 243.8,
+  "f0_range_st": 8.9,
+  "f0_std_st": 2.8,
+  "final_fall_st": 4.6,
+  "rolloff95_hz": 8578,
+  "lufs": -20.0
+ },
+ {
+  "file": "edge-margarita-crafted__2-centro.wav",
+  "asr": "El corazón. Elegir bien.",
+  "wer": 0.0,
+  "word_prob": 0.856,
+  "speech_s": 2.22,
+  "syl_per_s": 3.61,
+  "pauses_s": [
+   0.33
+  ],
+  "f0_median_hz": 209.8,
+  "f0_range_st": 7.8,
+  "f0_std_st": 2.18,
+  "final_fall_st": 3.8,
+  "rolloff95_hz": 8250,
+  "lufs": -19.6
+ },
+ {
+  "file": "edge-margarita-crafted__3-cierre.wav",
+  "asr": "Nota alta. Perfumería online en Panamá.",
+  "wer": 0.0,
+  "word_prob": 0.9,
+  "speech_s": 3.4,
+  "syl_per_s": 4.41,
+  "pauses_s": [
+   0.58
+  ],
+  "f0_median_hz": 213.4,
+  "f0_range_st": 8.4,
+  "f0_std_st": 2.26,
+  "final_fall_st": 2.2,
+  "rolloff95_hz": 6914,
+  "lufs": -18.7
+ },
+ {
+  "file": "edge-salome-directed__1-apertura.mp3",
+  "asr": "Todo perfume se cuenta en tres notas.",
+  "wer": 0.0,
+  "word_prob": 0.875,
+  "speech_s": 2.33,
+  "syl_per_s": 5.16,
+  "pauses_s": [],
+  "f0_median_hz": 178.4,
+  "f0_range_st": 6.8,
+  "f0_std_st": 2.26,
+  "final_fall_st": 4.8,
+  "rolloff95_hz": 8994,
+  "lufs": -20.5
+ },
+ {
+  "file": "edge-salome-directed__2-centro.mp3",
+  "asr": "El coraza súper índice 13N, elegir bien.",
+  "wer": 1.0,
+  "word_prob": 0.679,
+  "speech_s": 3.35,
+  "syl_per_s": 2.39,
+  "pauses_s": [
+   0.29
+  ],
+  "f0_median_hz": 171.9,
+  "f0_range_st": 4.8,
+  "f0_std_st": 1.39,
+  "final_fall_st": 1.8,
+  "rolloff95_hz": 8730,
+  "lufs": -20.6
+ },
+ {
+  "file": "edge-salome-directed__3-cierre.mp3",
+  "asr": "Nota alta. Perfumerá online en Panamá?",
+  "wer": 0.17,
+  "word_prob": 0.852,
+  "speech_s": 3.91,
+  "syl_per_s": 3.83,
+  "pauses_s": [
+   1.07
+  ],
+  "f0_median_hz": 182.6,
+  "f0_range_st": 4.4,
+  "f0_std_st": 1.32,
+  "final_fall_st": 1.1,
+  "rolloff95_hz": 8361,
+  "lufs": -20.8
+ },
+ {
+  "file": "kokoro-alex__1-apertura.wav",
+  "asr": "Todo perfume se cuenta en tres notas.",
+  "wer": 0.0,
+  "word_prob": 0.932,
+  "speech_s": 2.39,
+  "syl_per_s": 5.02,
+  "pauses_s": [],
+  "f0_median_hz": 124.7,
+  "f0_range_st": 11.1,
+  "f0_std_st": 3.63,
+  "final_fall_st": 7.8,
+  "rolloff95_hz": 6234,
+  "lufs": -22.5
+ },
+ {
+  "file": "kokoro-alex__2-centro.wav",
+  "asr": "El corazón elegir bien.",
+  "wer": 0.0,
+  "word_prob": 0.86,
+  "speech_s": 1.6,
+  "syl_per_s": 5.0,
+  "pauses_s": [],
+  "f0_median_hz": 122.2,
+  "f0_range_st": 13.7,
+  "f0_std_st": 4.4,
+  "final_fall_st": 11.3,
+  "rolloff95_hz": 6258,
+  "lufs": -21.7
+ },
+ {
+  "file": "kokoro-alex__3-cierre.wav",
+  "asr": "Nota alta, perfumería online en Panamá.",
+  "wer": 0.0,
+  "word_prob": 0.894,
+  "speech_s": 2.55,
+  "syl_per_s": 5.88,
+  "pauses_s": [],
+  "f0_median_hz": 123.7,
+  "f0_range_st": 12.9,
+  "f0_std_st": 3.94,
+  "final_fall_st": 7.8,
+  "rolloff95_hz": 6662,
+  "lufs": -23.0
+ },
+ {
+  "file": "kokoro-dora__1-apertura.wav",
+  "asr": "Todo perfume se cuenta en tres notas.",
+  "wer": 0.0,
+  "word_prob": 0.938,
+  "speech_s": 2.3,
+  "syl_per_s": 5.21,
+  "pauses_s": [],
+  "f0_median_hz": 174.4,
+  "f0_range_st": 10.0,
+  "f0_std_st": 3.29,
+  "final_fall_st": 8.0,
+  "rolloff95_hz": 5180,
+  "lufs": -23.0
+ },
+ {
+  "file": "kokoro-dora__2-centro.wav",
+  "asr": "El corazón elegir bien.",
+  "wer": 0.0,
+  "word_prob": 0.853,
+  "speech_s": 1.61,
+  "syl_per_s": 4.97,
+  "pauses_s": [],
+  "f0_median_hz": 172.9,
+  "f0_range_st": 11.8,
+  "f0_std_st": 3.87,
+  "final_fall_st": 9.6,
+  "rolloff95_hz": 5045,
+  "lufs": -22.1
+ },
+ {
+  "file": "kokoro-dora__3-cierre.wav",
+  "asr": "Nota alta, perfumería online en Panamá.",
+  "wer": 0.0,
+  "word_prob": 0.91,
+  "speech_s": 2.46,
+  "syl_per_s": 6.09,
+  "pauses_s": [],
+  "f0_median_hz": 175.4,
+  "f0_range_st": 9.7,
+  "f0_std_st": 3.08,
+  "final_fall_st": 7.8,
+  "rolloff95_hz": 6141,
+  "lufs": -23.1
+ }
+]
