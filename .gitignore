@@ -43,3 +43,9 @@ video-demo/build/
 .DS_Store
 Thumbs.db
 .agents/skills/
+
+# Subidas locales, estáticos recolectados y capturas de revisión
+media/
+staticfiles/
+.impeccable/review/
+video-demo/public/audio/voice-tests/

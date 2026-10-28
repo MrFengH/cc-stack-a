@@ -25,15 +25,17 @@ class StyledFormMixin:
                 css = "input"
             if css:
                 widget.attrs["class"] = f"{css} {widget.attrs.get('class', '')}".strip()
-            auto_id = self[name].auto_id
-            describedby = []
             if field.help_text:
-                describedby.append(f"{auto_id}_help")
-            if self.is_bound and name in self.errors:
-                widget.attrs["aria-invalid"] = "true"
-                describedby.append(f"{auto_id}_error")
-            if describedby:
-                widget.attrs["aria-describedby"] = " ".join(describedby)
+                widget.attrs["aria-describedby"] = f"{self[name].auto_id}_help"
+
+    def full_clean(self):
+        # Marca los errores tras validar; hacerlo en __init__ validaba antes de que las subclases configuraran sus campos.
+        super().full_clean()
+        for name in self.errors:
+            if name in self.fields:
+                attrs = self.fields[name].widget.attrs
+                attrs["aria-invalid"] = "true"
+                attrs["aria-describedby"] = f"{attrs.get('aria-describedby', '')} {self[name].auto_id}_error".strip()
 
 
 class ContactForm(StyledFormMixin, forms.ModelForm):
