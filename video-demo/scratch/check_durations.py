@@ -1,25 +1,36 @@
-import asyncio
 import os
-from playwright.async_api import async_playwright
+from playwright.sync_api import sync_playwright
 
-async def main():
-    async with async_playwright() as p:
-        browser = await p.chromium.launch()
-        page = await browser.new_page()
-        recordings_dir = os.path.abspath('video-demo/public/recordings')
-        for f in sorted(os.listdir(recordings_dir)):
-            if f.endswith('.webm'):
-                fp = os.path.join(recordings_dir, f).replace('\\', '/')
-                await page.set_content(f'<video src="file:///{fp}"></video>')
-                dur = await page.evaluate('''() => {
-                    const v = document.querySelector("video");
-                    return new Promise(r => {
-                        if (!isNaN(v.duration) && v.duration > 0) return r(v.duration);
-                        v.onloadedmetadata = () => r(v.duration);
-                    });
-                }''')
-                print(f"{f}: {dur:.2f}s ({round(dur*30)} frames)")
-        await browser.close()
+FILES = [
+    '01-intro.mp3',
+    '02-discovery.mp3',
+    '03-catalog.mp3',
+    '04-product.mp3',
+    '05-cart.mp3',
+    '06-checkout.mp3',
+    '07-tracking.mp3',
+    '08-panel.mp3',
+    '09-operations.mp3',
+    '10-outro.mp3',
+]
 
-if __name__ == '__main__':
-    asyncio.run(main())
+base_dir = r'C:\Users\sfeng\CCProyectos\cc-stack-a\video-demo\public\audio\voice'
+
+with sync_playwright() as p:
+    browser = p.chromium.launch()
+    page = browser.new_page()
+    total_audio_sec = 0.0
+    total_frames = 0
+    print('--- ARCHIVO POR ARCHIVO ---')
+    for f in FILES:
+        path = os.path.join(base_dir, f).replace('\\', '/')
+        page.goto(f'file:///{path}')
+        dur = page.evaluate('() => document.querySelector("video, audio").duration')
+        frames = round(dur * 30)
+        total_audio_sec += dur
+        total_frames += frames
+        print(f'{f}: {dur:6.3f} s ({frames:3d} frames)')
+    browser.close()
+
+print(f'\nSuma total exacta duraciones audio: {total_audio_sec:.3f} s ({total_frames} frames)')
+print(f'Equivalente en frames a 30fps: {total_frames / 30.0:.3f} s')

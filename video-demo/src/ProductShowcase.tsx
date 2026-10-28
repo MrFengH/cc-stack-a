@@ -10,13 +10,27 @@ import { SceneTracking } from "./components/SceneTracking";
 import { ScenePanel } from "./components/ScenePanel";
 import { SceneOperations } from "./components/SceneOperations";
 import { SceneOutro } from "./components/SceneOutro";
+import { AudioMixer } from "./components/audio/AudioMixer";
+import { SubtitlesOverlay } from "./components/editorial/SubtitlesOverlay";
+
+export interface ProductShowcaseProps {
+  enableAudio?: boolean;
+  enableSubtitles?: boolean;
+  musicTrack?: string;
+}
 
 /**
  * ProductShowcase V2 — Rediseño Visual y Motion Design
  * Utiliza <Sequence> con solapamiento controlado (14 a 18 frames)
  * para transiciones continuas sin cortes secos ni saltos en negro.
+ * Incluye mezcla completa de audio (locución neural, música con ducking, SFX)
+ * y subtítulos editoriales sincronizados.
  */
-export const ProductShowcase: React.FC = () => {
+export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
+  enableAudio = true,
+  enableSubtitles = true,
+  musicTrack = "audio/music/background.mp3",
+}) => {
   return (
     <div
       style={{
@@ -28,6 +42,11 @@ export const ProductShowcase: React.FC = () => {
         fontFamily: "system-ui, -apple-system, sans-serif",
       }}
     >
+      {/* Mezclador de audio profesional con ducking dinámico y SFX */}
+      {enableAudio && <AudioMixer musicTrack={musicTrack} />}
+
+      {/* Subtítulos sincronizados con estética editorial */}
+      {enableSubtitles && <SubtitlesOverlay />}
       {/* Escena 01 — Intro (Apertura editorial y reveal de plataforma) */}
       <Sequence durationInFrames={240}>
         <SceneIntro />

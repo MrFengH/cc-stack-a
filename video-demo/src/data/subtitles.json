@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "scene": "01",
+    "startFrame": 18,
+    "endFrame": 144,
+    "text": "Comprar perfumes en línea debe ser tan simple como disfrutarlos."
+  },
+  {
+    "id": 2,
+    "scene": "01",
+    "startFrame": 142,
+    "endFrame": 212,
+    "text": "Así nace Nota Alta."
+  },
+  {
+    "id": 3,
+    "scene": "02",
+    "startFrame": 239,
+    "endFrame": 431,
+    "text": "En lugar de listas interminables, descubres fragancias por familias olfativas y cómo evolucionan en tu piel."
+  },
+  {
+    "id": 4,
+    "scene": "03",
+    "startFrame": 465,
+    "endFrame": 620,
+    "text": "Un catálogo curado con filtros instantáneos por casa, ocasión y concentración."
+  },
+  {
+    "id": 5,
+    "scene": "04",
+    "startFrame": 689,
+    "endFrame": 898,
+    "text": "Cada perfume detalla su pirámide olfativa completa, para que sepas exactamente qué esperar desde la primera aplicación."
+  },
+  {
+    "id": 6,
+    "scene": "05",
+    "startFrame": 945,
+    "endFrame": 1130,
+    "text": "Descuentos y cupones que se validan al instante, recalculando subtotales sin pasos innecesarios."
+  },
+  {
+    "id": 7,
+    "scene": "06",
+    "startFrame": 1171,
+    "endFrame": 1361,
+    "text": "Un checkout pensado para Panamá: retiro en tienda en cuatro horas y pagos locales con Yappy o ACH."
+  },
+  {
+    "id": 8,
+    "scene": "07",
+    "startFrame": 1427,
+    "endFrame": 1601,
+    "text": "El cliente sigue cada etapa de su orden con total claridad, desde la confirmación hasta la entrega."
+  },
+  {
+    "id": 9,
+    "scene": "08",
+    "startFrame": 1649,
+    "endFrame": 1853,
+    "text": "Detrás de la experiencia, un panel de control con métricas clave de ventas, demanda y stock en tiempo real."
+  },
+  {
+    "id": 10,
+    "scene": "09",
+    "startFrame": 1915,
+    "endFrame": 2086,
+    "text": "Gestión integral de órdenes y ajustes directos de inventario para mantener el catálogo siempre al día."
+  },
+  {
+    "id": 11,
+    "scene": "10",
+    "startFrame": 2149,
+    "endFrame": 2202,
+    "text": "Nota Alta."
+  },
+  {
+    "id": 12,
+    "scene": "10",
+    "startFrame": 2201,
+    "endFrame": 2300,
+    "text": "Perfumería digital, pensada para Panamá."
+  }
+]
